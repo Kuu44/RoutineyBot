@@ -13,7 +13,7 @@
     "_teachers": ["BS","BS","SPP","SPP"," ","END"]
   },
   {
-    "_periods": [":satellite_orbital: Electric Machine ", ":satellite_orbital: Electric Machine ", ":control_knobs: Instrumentation I ", ":control_knobs: Instrumentation I ", "B", ":robot:Microprocessor ",":robot:Microprocessor ",":robot: Microprocessor ", "END"],
+    "_periods": [":satellite_orbital: Electric Machine ", ":satellite_orbital: Electric Machine ", ":control_knobs: Instrumentation I ", ":control_knobs: Instrumentation I ", "B", ":robot: Microprocessor ",":robot: Microprocessor ",":robot: Microprocessor ", "END"],
     "_teachers": ["KBT","KBT", "MB", "MB"," ", "LAB", "LAB", "LAB","END"]
   },
   {
