@@ -1,5 +1,6 @@
 // require the discord.js module
-var Discord = require('discord.js');
+const fs = require('fs');
+const Discord = require('discord.js');
 const {
   prefix,
   token
@@ -12,8 +13,16 @@ var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getD
 var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
 
 // Initialize Discord Bot
-var bot = new Discord.Client();
+const bot = new Discord.Client();
+bot.commands=new Discord.Collection();
 
+const commandFiles = fs.readdirSync('./commands').filter(file=>file.endsWith('.js'));
+for (const file of commandFiles){
+  const command =require(`./commands/${file}`);
+
+  //setting a new item in the collection
+  client.commands.set(command.name,command);
+}
 /*//Creating an Embed
 // const exampleEmbed = new Discord.MessageEmbed()
 // 	.setColor('#0099ff')
