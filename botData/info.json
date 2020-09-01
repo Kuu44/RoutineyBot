@@ -22,7 +22,7 @@
   },
   {
     "_periods": [" ", "Microprocessor","Microprocessor", "B", "Applied Math", "Numerical Methods","Numerical Methods", "END"],
-    "_teachers": [" ", "DSB", "DSB"," ", "SG", "LAB", "LAB","END"]
+    "_teachers": [" ", "DSB", "DSB"," ", "SG", "LAB", "LAB", "END"]
   }
 ],
 "days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
