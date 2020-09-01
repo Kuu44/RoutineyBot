@@ -36,7 +36,7 @@ bot.on('message', message => {
   if(!bot.commands.has(commandName)) return;
   const command=bot.commands.get(commandName);
   if(command.args && !args.length){
-    return message.channel.send(`You didnt provide any argument, ${message.author}!`);
+    return message.channel.send(`You didnt provide any argument, ${message.author}!\nUsage: ${command.usage}`);
   }
   try{
     command.execute(message,args);
