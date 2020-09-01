@@ -4,11 +4,12 @@ module.exports = {
 	usage: 'rt!day <day of the week>',
   description: 'Shows routine of a day!',
   execute(message, args) {
+		const Discord = require('discord.js');
     const info = require('../info.json');
-
-    var msg;
+    var msg = [];
 		var day;
 		var dayT = args[0].toLowerCase();
+
 		switch(dayT){
 			case "sunday":
 				day=0;
@@ -37,17 +38,44 @@ module.exports = {
 				return;
 		}
 
-		msg = '> Day:' + info.days[day] + `\n> ${info.days[day]}'s Classes\n\`\`\``;
-    periods = info.routine[day]._periods;
-    teachers = info.routine[day]._teachers;
-
+		const periods = info.routine[day]._periods;
+		const teachers = info.routine[day]._teachers;
     var i = 0;
     while (periods[i] != "END") {
-      msg += periods[i] + '\t' + '|' + teachers[i] + '\n';
+      const position = `${i+1}th Period`;
+      switch (periods[i]) {
+        case 'B':
+          msg.push({
+            name: 'BREAK :exploding_head:',
+            value: position
+          });
+					break;
+        case ' ':
+          msg.push({
+            name: 'Free Period :zany_face:',
+            value: position
+          });
+					break;
+        default:
+          msg.push({
+            name: periods[i] + ' | ' + teachers[i],
+            value: position
+          });
+      }
       i++;
     }
-    msg += '```';
 
-    message.channel.send(msg);
+    const exampleEmbed = new Discord.MessageEmbed()
+      .setColor('#0099ff')
+      .setTitle(`${info.days[day]}`)
+      .setURL('https://discord.js.org/')
+      .setAuthor('075 BCT AB', 'https://i.imgur.com/OQwR8CB.png', 'https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid')
+      .setDescription('Classes For The Day:')
+      .setThumbnail('https://i.imgur.com/cuLTlNe.png')
+      .addFields(msg)
+      .setTimestamp()
+      .setFooter('Have a boring day studying! :(', 'https://i.imgur.com/cuLTlNe.png');
+
+    message.channel.send(exampleEmbed);
   },
 };

@@ -74,3 +74,23 @@ const exampleEmbed = new Discord.MessageEmbed()
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');*/
+/*	execute(message, args) {
+		const info = require('../info.json');
+		var today = new Date();
+
+		var msg;
+		const day=today.getDay();
+		msg = '> Day:' + info.days[day] + '\n> Today\'s Classes\n```\n';
+		periods = info.routine[day]._periods;
+		teachers = info.routine[day]._teachers;
+
+		var i = 0;
+		while (periods[i] != "END") {
+			msg += periods[i] + '\t' + '|' + teachers[i] + '\n';
+			i++;
+		}
+		msg += '```';
+
+		message.channel.send(msg);
+	},
+*/
