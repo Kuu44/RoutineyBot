@@ -31,11 +31,12 @@ bot.on('message', message => {
   if (!message.content.startsWith(prefix) && message.author.bot) return;
 
   var args = message.content.slice(prefix.length).trim().split(/ +/);
-  var command = args.shift().toLowerCase();
+  var commandName = args.shift().toLowerCase();
 
-  if(!bot.commands.has(command)) return;
+  if(!bot.commands.has(commandName)) return;
+  const command=bot.commands.get(commandName);
   try{
-    bot.commands.get(command).execute(message,args);
+    command.execute(message,args);
   }
   catch(error){
     console.error(error);
