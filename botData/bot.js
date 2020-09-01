@@ -18,6 +18,10 @@ for (const file of commandFiles) {
   bot.commands.set(command.name, command);
 }
 
+//for help.js
+const helpCommand=require('./help.js');
+bot.commands.set(helpCommand.name,helpCommand);
+
 //Bot commands
 bot.once('ready', () => { //Only triggers once after logging in
   console.log('Ready!');
