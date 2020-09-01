@@ -26,3 +26,51 @@ bot.on('message', function (user, userID, channelID, message, evt) {
          }
      }
 });*/
+
+/*switch (cmd) {
+  case 'ping':
+    bot.commands.get('ping').execute(message, args);
+    break;
+  case 'beep':
+    message.channel.send('Boop.');
+    break;
+  case 'today':
+    showRoutine(today.getDay(), message);
+    break;
+  case 'time':
+    message.channel.send(date + '\n' + time);
+    break;
+  case 'hi':
+    message.channel.send(`Hi ${message.author.username}!`);
+    break;
+  case 'howru':
+    howYou(message);
+    break;
+  case 'server':
+    message.channel.send(`This server\'s name is: ${message.guild.name}\nMember Count: ${message.guild.memberCount}`);
+    break;
+  case 'args':
+    message.channel.send(`Argument list: ${args}\nCount: ${args.length}`);
+    break;
+  default:
+    message.channel.send('Hmm.. I dont seem to have this command!');
+}*/
+
+/*//Creating an Embed
+const exampleEmbed = new Discord.MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Some title')
+	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('Some description here')
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+	)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setTimestamp()
+	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');*/

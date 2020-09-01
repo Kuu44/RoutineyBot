@@ -1,9 +1,10 @@
 module.exports = {
 	name: 'howru',
 	description: 'Tells us how the bot is feeling',
-	execute(message, args) {
-	execute(message, args) {
-		const taggedUser = message.mentions.users.first();
+	execute(message, args, today) {
+		const info = require('../info.json');
+		var today = new Date();
+
 	  switch (today.getDay()) {
 	    case 1:
 	      message.channel.send(`Feeling real depressed, what did you expect, ${message.author.username}? Its a Monday :unamused:`)
