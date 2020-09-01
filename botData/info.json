@@ -2,7 +2,7 @@
 "routine":[
   {
     "_periods": ["Numerical Methods","Numerical Methods", "Instrumentation I", "Instrumentation I", "B", "Applied Math", "Applied Math", "Numerical Methods","END"],
-    "_teachers": ["SG", "SG", "MB", "MB", " ", " JG", "SG", "JRS","END"]
+    "_teachers": ["SG", "SG", "MB", "MB", " ", "JG", "SG", "JRS","END"]
   },
   {
     "_periods": ["Microprocessor", "Microprocessor", "Numerical Methods", "Numerical Methods","B","Applied Math", "Data Structure and Algorithm", "Data Structure and Algorithm", "Data Structure and Algorithm","END"],
