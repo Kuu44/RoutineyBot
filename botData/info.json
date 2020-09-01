@@ -6,7 +6,7 @@
   },
   {
     "_periods": ["Microprocessor", "Microprocessor", "Numerical Methods", "Numerical Methods","B","Applied Math", "Data Structure and Algorithm", "Data Structure and Algorithm", "Data Structure and Algorithm","END"],
-    "_teachers": ["DSB", "DSB", "BDM", " ", "SKM", "LAB", "LAB", "LAB", "END"]
+    "_teachers": ["DSB", "DSB", "BDM","BDM", " ", "SKM", "LAB", "LAB", "LAB", "END"]
   },
   {
     "_periods": ["Data Structure and Algorithm","Data Structure and Algorithm","Discrete Structure","Discrete Structure","B","END"],
@@ -14,7 +14,7 @@
   },
   {
     "_periods": ["Electric Machine", "Electric Machine", "Instrumentation I", "Instrumentation I", "B", "Microprocessor","Microprocessor","Microprocessor", "END"],
-    "_teachers": ["KBT", "MB", "MB"," ", "LAB", "LAB", "LAB","END"]
+    "_teachers": ["KBT","KBT", "MB", "MB"," ", "LAB", "LAB", "LAB","END"]
   },
   {
     "_periods": ["Electric Machine", "Electric Machine", "Discrete Structure", "B","Data Structure and Algorithm", "Electric Machine","Electric Machine/Instrumentation I", "END"],
@@ -22,7 +22,7 @@
   },
   {
     "_periods": [" ", "Microprocessor","Microprocessor", "B", "Applied Math", "Numerical Methods","Numerical Methods", "END"],
-    "_teachers": [" ", "DSB", " ", "SG", "LAB", "LAB","END"]
+    "_teachers": [" ", "DSB", "DSB"," ", "SG", "LAB", "LAB", "END"]
   }
 ],
 "days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
