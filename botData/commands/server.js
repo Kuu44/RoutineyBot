@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'server',
-	name: 'server',
+	args: false,
 	description: 'Gives info on server',
 	execute(message, args) {
 		message.channel.send(`This server\'s name is: ${message.guild.name}\nMember Count: ${message.guild.memberCount}`);

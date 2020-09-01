@@ -1,5 +1,6 @@
 module.exports = {
 	name: 'today',
+	args: false,
 	description: 'The bread and butter of Routiney!',
 	execute(message, args) {
 		const info = require('../info.json');
@@ -12,7 +13,7 @@ module.exports = {
 		teachers = info.routine[day]._teachers;
 
 		var i = 0;
-		while (periods[i] != "end") {
+		while (periods[i] != "END") {
 			msg += periods[i] + '\t' + '|' + teachers[i] + '\n';
 			i++;
 		}

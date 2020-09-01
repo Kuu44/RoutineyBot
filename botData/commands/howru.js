@@ -1,5 +1,6 @@
 module.exports = {
 	name: 'howru',
+	args: false,
 	description: 'Tells us how the bot is feeling',
 	execute(message, args, today) {
 		const info = require('../info.json');
