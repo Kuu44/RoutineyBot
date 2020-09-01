@@ -22,7 +22,6 @@ for (const file of commandFiles) {
 bot.once('ready', () => { //Only triggers once after logging in
   console.log('Ready!');
 });
-
 bot.login(token);
 
 bot.on('message', message => {
@@ -40,10 +39,6 @@ bot.on('message', message => {
   }
   catch(error){
     console.error(error);
-    message.reply('there was an error trying to exexute that command!');
+    message.reply('There was an error trying to exexute that command!');
   }
 });
-
-function showRoutine(day, message) {
-
-}
