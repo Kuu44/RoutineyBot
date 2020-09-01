@@ -1,27 +1,27 @@
 {
 "routine":[
   {
-    "_periods": [" :bar_chart: Numerical Methods "," :bar_chart: Numerical Methods ", ":control_knobs:Instrumentation I ", ":control_knobs:Instrumentation I ", "B", ":construction_site: Applied Math", ":construction_site:Applied Math", " :bar_chart: Numerical Methods ","END"],
+    "_periods": [" :bar_chart: Numerical Methods "," :bar_chart: Numerical Methods ", ":control_knobs: Instrumentation I ", ":control_knobs: Instrumentation I ", "B", ":construction_site: Applied Math", ":construction_site: Applied Math", " :bar_chart: Numerical Methods ","END"],
     "_teachers": ["SG", "SG", "MB", "MB", " ", " JG", "SG", "JRS","END"]
   },
   {
-    "_periods": ["robot:Microprocessor ", "robot:Microprocessor ", " :bar_chart: Numerical Methods ", " :bar_chart: Numerical Methods ","B",":construction_site:Applied Math", ":cd:Data Structure and Algorithm ", ":cd:Data Structure and Algorithm ", ":cd:Data Structure and Algorithm ","END"],
+    "_periods": [":robot: Microprocessor ", ":robot: Microprocessor ", " :bar_chart: Numerical Methods ", " :bar_chart: Numerical Methods ","B",":construction_site: Applied Math", ":cd: Data Structure and Algorithm ", ":cd: Data Structure and Algorithm ", ":cd: Data Structure and Algorithm ","END"],
     "_teachers": ["DSB", "DSB", "BDM","BDM", " ", "SKM", "LAB", "LAB", "LAB", "END"]
   },
   {
-    "_periods": [":cd:Data Structure and Algorithm ",":cd:Data Structure and Algorithm "," :calendar_spiral:Discrete Structure"," :calendar_spiral:Discrete Structure","B","END"],
+    "_periods": [":cd: Data Structure and Algorithm ",":cd: Data Structure and Algorithm "," :calendar_spiral: Discrete Structure"," :calendar_spiral: Discrete Structure","B","END"],
     "_teachers": ["BS","BS","SPP","SPP"," ","END"]
   },
   {
-    "_periods": [":satellite_orbital:Electric Machine ", ":satellite_orbital:Electric Machine ", ":control_knobs:Instrumentation I ", ":control_knobs:Instrumentation I ", "B", "robot:Microprocessor ","robot:Microprocessor ","robot:Microprocessor ", "END"],
+    "_periods": [":satellite_orbital: Electric Machine ", ":satellite_orbital: Electric Machine ", ":control_knobs: Instrumentation I ", ":control_knobs: Instrumentation I ", "B", ":robot:Microprocessor ",":robot:Microprocessor ",":robot: Microprocessor ", "END"],
     "_teachers": ["KBT","KBT", "MB", "MB"," ", "LAB", "LAB", "LAB","END"]
   },
   {
-    "_periods": [":satellite_orbital:Electric Machine ", ":satellite_orbital:Electric Machine ", " :calendar_spiral:Discrete Structure", "B",":cd:Data Structure and Algorithm ", ":satellite_orbital:Electric Machine/:control_knobs:Instrumentation I ",":satellite_orbital:Electric Machine /:control_knobs:Instrumentation I ", "END"],
+    "_periods": [":satellite_orbital: Electric Machine ", ":satellite_orbital: Electric Machine ", " :calendar_spiral: Discrete Structure", "B",":cd: Data Structure and Algorithm ", ":satellite_orbital: Electric Machine/:control_knobs: Instrumentation I ",":satellite_orbital :Electric Machine / :control_knobs: Instrumentation I ", "END"],
     "_teachers": ["KBT", "KBT", "SPP"," ","BS", "LAB","LAB","END"]
   },
   {
-    "_periods": [" ", "robot:Microprocessor ","robot:Microprocessor ", "B", ":construction_site: Applied Math", " :bar_chart: Numerical Methods "," :bar_chart: Numerical Methods ", "END"],
+    "_periods": [" ", ":robot: Microprocessor ",":robot: Microprocessor ", "B", ":construction_site: Applied Math", " :bar_chart: Numerical Methods "," :bar_chart: Numerical Methods ", "END"],
     "_teachers": [" ", "DSB", "DSB"," ", "SG", "LAB", "LAB", "END"]
   }
 ],
