@@ -1,6 +1,6 @@
 module.exports = {
   name: "notifications",
-  description: "Turn on the routein notifications",
+  description: "Turn on the routine notifications",
   execute(message, args) {
     var schedule = require("node-schedule");
     var channelName = args[0];
