@@ -58,7 +58,7 @@ module.exports = {
 					break;
         default:
           msg.push({
-            name: ' ' + emotes[i] + ' ' + periods[i] + '  | ' + teachers[i],
+            name: periods[i] + ' | ' + teachers[i],
             value: position
           });
       }
