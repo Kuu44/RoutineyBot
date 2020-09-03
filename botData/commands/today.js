@@ -3,23 +3,12 @@ module.exports = {
   args: false,
   description: 'The bread and butter of Routiney!',
   execute(message, args) {
-    const Discord = require('discord.js');
-    const info = require('../info.json');
-    const msgCreate = require('./post.js');
+    const msgCreate = require('../functions/post.js');
+    const postEmbed = require('../functions/postEmbed.js');
     var today = new Date();
     const day = today.getDay();
 
-    const msg=msgCreate(day);
-    const exampleEmbed = new Discord.MessageEmbed()
-      .setColor('#0099ff')
-      .setTitle(`${info.days[day]}`)
-      .setURL('https://discord.js.org/')
-      .setAuthor('075 BCT AB', 'https://i.imgur.com/OQwR8CB.png', 'https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid')
-      .setDescription('Today\'s Classes:')
-      .setThumbnail('https://i.imgur.com/cuLTlNe.png')
-      .addFields(msg)
-      .setTimestamp()
-      .setFooter('Have a boring day studying! :sob: ', 'https://i.imgur.com/cuLTlNe.png');
-
-    message.channel.send(exampleEmbed);
+    const msg = msgCreate(day);
+    postEmbed(day, message, msg, 'Today\'s Classes:');
+  }
 };

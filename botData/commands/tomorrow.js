@@ -3,53 +3,12 @@ module.exports = {
   args: false,
   description: 'The bread and butter of Routiney but for the future!',
   execute(message, args) {
-    const Discord = require('discord.js');
-    const info = require('../info.json');
-    const postEmbed = require('./post.js');
+    const msgCreate = require('../functions/post.js');
+    const postEmbed = require('../functions/postEmbed.js');
     var today = new Date();
     const day = today.getDay() + 1;
 
-    var msg = [];
-    const emotes = info.routine[day]._emotes;
-    const periods = info.routine[day]._periods;
-    const teachers = info.routine[day]._teachers;
-
-    var i = 0;
-    while (periods[i] != "END") {
-      const position = `${i+1}th Period`;
-      switch (periods[i]) {
-        case 'B':
-          msg.push({
-            name: 'BREAK :exploding_head:',
-            value: position
-          });
-          break;
-        case ' ':
-          msg.push({
-            name: 'Free Period :zany_face:',
-            value: position
-          });
-          break;
-        default:
-          msg.push({
-            name: ' ' + emotes[i] + ' ' + periods[i] + '  | ' + teachers[i],
-            value: position
-          });
-      }
-      i++;
-    }
-
-    const exampleEmbed = new Discord.MessageEmbed()
-      .setColor('#0099ff')
-      .setTitle(`${info.days[day]}`)
-      .setURL('https://discord.js.org/')
-      .setAuthor('075 BCT AB', 'https://i.imgur.com/OQwR8CB.png', 'https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid')
-      .setDescription('Tomorrow\'s Classes:')
-      .setThumbnail('https://i.imgur.com/cuLTlNe.png')
-      .addFields(msg)
-      .setTimestamp()
-      .setFooter('Have a boring day studying! :sob: ', 'https://i.imgur.com/cuLTlNe.png');
-
-    message.channel.send(exampleEmbed);
+    const msg = msgCreate(day);
+    postEmbed(day, message, msg, 'Tomorrow\'s Classes:');
   },
 };

@@ -5,11 +5,11 @@ module.exports = {
   execute(message, args) {
     const Discord = require('discord.js');
 		const fs = require('fs');
-    const info = require('./info.json');
+    const info = require('../info.json');
 		const {
 		  prefix,
 		  token
-		} = require('./auth.json');
+		} = require('../auth.json');
     var msg = [{
 			name: 'help',
 			value: 'Shows a list of all commands',
@@ -19,7 +19,7 @@ module.exports = {
     const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 		var commandList=new Discord.Collection()
 		for (const file of commandFiles) {
-		  const command = require(`./commands/${file}`);
+		  const command = require(`../commands/${file}`);
 
 		  //setting a new item in the collection
 		  commandList.set(command.name, command);

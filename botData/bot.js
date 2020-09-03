@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 }
 
 //for help.js
-const helpCommand=require('./help.js');
+const helpCommand=require('./functions/help.js');
 bot.commands.set(helpCommand.name,helpCommand);
 
 //Bot commands
@@ -37,7 +37,7 @@ bot.on('message', message => {
   var args = message.content.slice(prefix.length).trim().split(/ +/);
   var commandName = args.shift().toLowerCase();
 
-  if(!bot.commands.has(commandName)) return;
+  if(!bot.commands.has(commandName)) return message.channel.send(`Hmm I dont seem to have this command, ${message.author}!:sweat_smile:\nTry **rt! help** for more details!`);
   const command=bot.commands.get(commandName);
   if(command.args && !args.length){
     return message.channel.send(`You didnt provide any argument, ${message.author}!\nUsage: ${command.usage}`);
