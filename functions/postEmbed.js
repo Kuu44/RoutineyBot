@@ -1,4 +1,4 @@
-function postEmbed(day, message, msg, description) {
+function postEmbed(day, channel, msg, description) {
   const Discord = require('discord.js');
   const info = require('../info.js');
 
@@ -12,7 +12,7 @@ function postEmbed(day, message, msg, description) {
     .addFields(msg)
     .setTimestamp()
     .setFooter('Have a boring day studying! :P', 'https://i.imgur.com/cuLTlNe.png');
-  message.channel.send(exampleEmbed);
+  channel.send(exampleEmbed);
 }
 
 module.exports = postEmbed;

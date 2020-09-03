@@ -31,7 +31,7 @@ const info = {
       "_emotes": [":satellite_orbital:", ":satellite_orbital:", ":calendar_spiral:", "", ":cd:", ":satellite_orbital:", ":satellite_orbital:", "END"],
       "_periods": ["Electric Machine", "Electric Machine", "Discrete Structure", "B", "Data Structure and Algorithm ", "Electric Machine / :control_knobs: Instrumentation I", "Electric Machine / :control_knobs: Instrumentation I", "END"],
       "_teachers": ["KBT", "KBT", "SPP", "", "BS", "LAB", "LAB", "END"],
-      "_timing":[[[10,15],[11,5]],[[11,5],[11,55]],[[11,55],[12,45]],[[12,45],[13,35]],[13,35],[[13,35],[14,25]],[[14,25],[15,15]],[[15,15],[16,5]],[14,5],[14,55]]
+      "_timing":[[[10,15],[11,05]],[[11,5],[11,55]],[[11,55],[12,45]],[[12,45],[13,35]],[13,35],[[13,35],[14,25]],[[14,25],[15,15]],[[15,15],[16,5]],[14,5],[14,55]]
     },
     {
       "_emotes": ["", ":robot:", ":robot:", "", ":construction_site:", ":bar_chart:", ":bar_chart:", "END"],

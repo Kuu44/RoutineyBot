@@ -1,5 +1,7 @@
 module.exports = {
   name: "notifications",
+  args: true,
+  usage: '',
   description: "Turn on the routine notifications",
   execute(message, args) {
     var schedule = require("node-schedule");

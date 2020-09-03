@@ -38,6 +38,6 @@ module.exports = {
     }
 
     const msg = msgCreate(day);
-    postEmbed(day, message, msg, 'Classes For The Day:');
+    postEmbed(day, message.channel, msg, 'Classes For The Day:');
   },
 };
