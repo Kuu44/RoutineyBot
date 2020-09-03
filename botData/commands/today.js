@@ -9,6 +9,7 @@ module.exports = {
     const day = today.getDay();
 
     var msg = [];
+    const emotes = info.routine[day]._emotes;
     const periods = info.routine[day]._periods;
     const teachers = info.routine[day]._teachers;
 
@@ -21,16 +22,16 @@ module.exports = {
             name: 'BREAK :exploding_head:',
             value: position
           });
-					break;
+          break;
         case ' ':
           msg.push({
             name: 'Free Period :zany_face:',
             value: position
           });
-					break;
+          break;
         default:
           msg.push({
-            name: periods[i] + ' | ' + teachers[i],
+            name: ' ' + emotes[i] + ' ' + periods[i] + '  | ' + teachers[i],
             value: position
           });
       }
