@@ -3,7 +3,7 @@ module.exports = {
 	args: false,
 	description: 'Tells us how the bot is feeling',
 	execute(message, args, today) {
-		const info = require('../info.json');
+		const info = require('../info.js');
 		var today = new Date();
 
 	  switch (today.getDay()) {

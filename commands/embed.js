@@ -4,7 +4,7 @@ module.exports = {
 	description: 'Sample embed',
 	execute(message, args) {
 		const Discord = require('discord.js');
-		const info = require('../info.json');
+		const info = require('../info.js');
 		var today = new Date();
 		const day=today.getDay();
 

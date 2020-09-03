@@ -1,5 +1,5 @@
 function msgCreate(day) {
-  const info = require('../info.json');
+  const info = require('../info.js');
   var msg = [];
   const emotes = info.routine[day]._emotes;
   const periods = info.routine[day]._periods;

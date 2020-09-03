@@ -5,7 +5,7 @@ module.exports = {
   execute(message, args) {
     const Discord = require('discord.js');
 		const fs = require('fs');
-    const info = require('../info.json');
+    const info = require('../info.js');
 		const {
 		  prefix,
 		  token

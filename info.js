@@ -1,11 +1,13 @@
-subjects=["Numerical Methods"];
+const subjects=["Numerical Methods"]; //List of subjects
+const emotes=[":bar_chart: "]; //List of emotes
+const teachers=["SG"]; //List of teachers
 
-const info={
+const info = {
   "routine": [{
-      "_emotes": [":bar_chart: ", ":bar_chart: ", ":control_knobs: ", ":control_knobs: ", "", ":construction_site: ", ":construction_site: ", ":bar_chart: ", "END"],
-      "_periods": ["Numerical Methods", "Numerical Methods", "Instrumentation I", "Instrumentation I", "B", "Applied Math", "Applied Math", "Numerical Methods", "END"],
-      "_teachers": ["SG", "SG", "MB", "MB", "", "JG", "SG", "JRS", "END"],
-      "_timing":[[[10,15],[11,5]],[[11,5],[11,55]],[[11,55],[12,45]],[[12,45],[13,35]],[13,35],[[13,35],[14,25]],[[14,25],[15,15]],[[15,15],[16,5]],[14,5],[14,55]]
+      "_emotes": [emotes[0], ":bar_chart: ", ":control_knobs: ", ":control_knobs: ", "", ":construction_site: ", ":construction_site: ", ":bar_chart: ", "END"],
+      "_periods": [subjects[0], "Numerical Methods", "Instrumentation I", "Instrumentation I", "B", "Applied Math", "Applied Math", "Numerical Methods", "END"],
+      "_teachers": [teachers[0], "SG", "MB", "MB", "", "JG", "SG", "JRS", "END"],
+      "_timing": [[[10,15],[11,5]],[[11,5],[11,55]],[[11,55],[12,45]],[[12,45],[13,35]],[13,35],[[13,35],[14,25]],[[14,25],[15,15]],[[15,15],[16,5]],[14,5],[14,55]]
     },
     {
       "_emotes": [":robot:", ":robot:", ":bar_chart:", ":bar_chart: ", "", ":construction_site: ", ":cd: ", ":cd: ", ":cd:", "END"],
@@ -41,5 +43,5 @@ const info={
   "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
   "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
   "Timing":[[[10,15],[11,5]],[[11,5],[11,55]],[[11,55],[12,45]],[[12,45],[13,35]],[13,35],[[13,35],[14,25]],[[14,25],[15,15]],[[15,15],[16,5]],[14,5],[14,55]]
-}
+};
 module.exports=info;

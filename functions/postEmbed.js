@@ -1,6 +1,6 @@
 function postEmbed(day, message, msg, description) {
   const Discord = require('discord.js');
-  const info = require('../info.json');
+  const info = require('../info.js');
 
   const exampleEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
