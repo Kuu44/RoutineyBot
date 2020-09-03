@@ -32,7 +32,7 @@ bot.on('message', message => {
   //logs everything typed
   console.log(message.content);
 
-  if (!message.content.startsWith(prefix) && message.author.bot) return;
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   var args = message.content.slice(prefix.length).trim().split(/ +/);
   var commandName = args.shift().toLowerCase();
