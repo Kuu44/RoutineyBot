@@ -26,8 +26,8 @@ bot.commands.set(helpCommand.name,helpCommand);
 bot.once('ready', () => { //Only triggers once after logging in
   console.log('Ready!');
 });
-bot.login(token);
-
+//bot.login(token);
+bot.login(process.env.BOT_TOKEN);
 bot.on('message', message => {
   //logs everything typed
   console.log(message.content);
