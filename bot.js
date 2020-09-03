@@ -1,11 +1,8 @@
 // require the discord.js module
 const fs = require('fs');
 const Discord = require('discord.js');
-const {
-  prefix,
-  token
-} = require('./auth.json');
-
+const {prefix} = require('./auth.json');
+//const (token)=require('./secrets.json');
 // Initialize Discord Bot
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
@@ -26,12 +23,8 @@ bot.commands.set(helpCommand.name, helpCommand);
 bot.once('ready', () => { //Only triggers once after logging in
   console.log('Ready!');
 });
-if (token) {
-  bot.login(token);
-}
-if (process.env.BOT_TOKEN) {
-  bot.login(process.env.BOT_TOKEN);
-}
+//if (token) {bot.login(token);}
+if (process.env.BOT_TOKEN) { bot.login(process.env.BOT_TOKEN);}
 bot.on('message', message => {
   //logs everything typed
   console.log(message.content);
