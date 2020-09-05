@@ -17,7 +17,8 @@ const teachers = ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JR
 //10. Instrumentation I,:control_knobs:;LAB;
 
 const info = {
-  "routine": [{
+  "routine": [
+    {
       "_emotes": [emotes[0], emotes[0], emotes[1], emotes[1], "", emotes[2], emotes[2], emotes[0], "END"],
       "_periods": [subjects[0], subjects[0], subjects[1], subjects[1], "B", subjects[2], subjects[2], subjects[0], "END"],
       "_teachers": [teachers[0], teachers[0], teachers[1], teachers[1], "", teachers[8], teachers[0], teachers[9], "END"],
