@@ -4,6 +4,7 @@ module.exports = {
   execute(message, args) {
     const { routine } = require("../info.json");
     const setNotification = require("../functions/setNotification");
+    
 
     //TIme 15 minutes early
     const getTime = (time) => {
@@ -13,7 +14,12 @@ module.exports = {
     };
 
     var today = new Date();
-    const day = today.getDay();
+    const day = today.getDay()-1;
+   
+    if(day==6){ /// Saturday
+      message.channel.send(" No classes today . Happy Holidays");
+    }else{
+
     
     // console.log(routine[day]._periods);
 
@@ -46,8 +52,6 @@ module.exports = {
           console.log(notificationMessage);
           setNotification(schedule, notificationChannel, `${item} period starts in 15 minutes `,getTime(routine[day]._timing[index][0]) );
           setNotification(schedule, notificationChannel, `${item} period has started  `,routine[day]._timing[index][0]) ;
-          
-
         }
       });
       notificationChannel.send(" Notifications turned on ");
@@ -63,6 +67,8 @@ module.exports = {
     } else {
       message.channel.send(" Channel not found ");
     }
+
+  }
   },
 };
 
