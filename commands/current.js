@@ -15,6 +15,7 @@ module.exports = {
     const periods = info.routine[day]._periods;
     const teachers = info.routine[day]._teachers;
     const timing = info.routine[day]._timing;
+    const emotePNG=info.routine[day]._emotePNGs;
 
     function inMinutes(time) {
       return time[0] * 60 + time[1];
@@ -51,7 +52,8 @@ module.exports = {
       msg = {
         period: 'No Classes Right Now',
         teacher: 'Ja beta, jiiley apni jindagi :smile:',
-        quote: '<Time>: '+currentFormattedTime
+        quote: '<Time>: '+currentFormattedTime,
+        thumbnail: 'https://i.imgur.com/cuLTlNe.png'
       };
       classTime = `Chill :wink:`;
     } else {
@@ -63,21 +65,24 @@ module.exports = {
           msg = {
             period: 'BREAK :exploding_head:',
             teacher: 'Go Wild :zany_face:',
-            quote: '<Time> :'+currentFormattedTime
+            quote: '<Time> :'+currentFormattedTime,
+            thumbnail: 'https://i.imgur.com/cuLTlNe.png'
           };
           break;
         case ' ':
           msg = {
             period: 'Free Period :zany_face:',
             teacher: 'Go resume your gaming :video_game:!',
-            quote: '<Time> :'+currentFormattedTime
+            quote: '<Time> :'+currentFormattedTime,
+            thumbnail: 'https://i.imgur.com/cuLTlNe.png'
           };
           break;
         default:
           msg = {
             period: periods[position],
-            teacher: teachers[position],
-            quote: ':rotating_light: Class in session :rotating_light:'
+            teacher: 'Teacher: '+teachers[position],
+            quote: ':rotating_light: Class in session :rotating_light:',
+            thumbnail: emotePNG[position]
           };
       }
     }
@@ -88,7 +93,7 @@ module.exports = {
       .setURL('https://time.is/')
       .setAuthor('075 BCT AB', 'https://i.imgur.com/OQwR8CB.png', 'https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid')
       .setDescription(classTime)
-      .setThumbnail('https://i.imgur.com/cuLTlNe.png')
+      .setThumbnail(msg.thumbnail)
       .addFields({
         name: msg.teacher,
         value: msg.quote
