@@ -22,7 +22,7 @@ const setNotifications = (day, schedule, channel, notificationMessage, time, pos
       msg = {
         period: 'BREAK :exploding_head:',
         teacher: 'Go Wild :zany_face:',
-        quote: ':amusing: Break' + notificationMessage + ' :amusing:',
+        quote: ':video_game: Break' + notificationMessage + ' :video_game:',
         thumbnail: 'https://i.imgur.com/cuLTlNe.png'
       };
       break;
@@ -30,7 +30,7 @@ const setNotifications = (day, schedule, channel, notificationMessage, time, pos
       msg = {
         period: 'Free Period :zany_face:',
         teacher: 'Time for your gaming :video_game:!',
-        quote: ':amusing: Free Period' + notificationMessage + ' :amusing:',
+        quote: ':video_game: Free Period' + notificationMessage + ' :video_game:',
         thumbnail: 'https://i.imgur.com/cuLTlNe.png'
       };
       break;

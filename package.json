@@ -1,6 +1,6 @@
 {
   "name": "routiney-bot",
-  "version": "6.9.420",
+  "version": "6.9.420.2",
   "description": "Get your Routines, Right Here!",
   "main": "bot.js",
   "scripts": {

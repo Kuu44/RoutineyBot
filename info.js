@@ -25,6 +25,10 @@ const emotePNGS = [
 //10. Instrumentation I,:control_knobs:;LAB;
 
 const info = {
+  "className":"075 BCT AB",
+  "classLogo":"https://i.imgur.com/OQwR8CB.png",
+  "classLink":"https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid",
+  "preTime":15,
   "channelId": 742020361440198750,
   "routine": [
     {

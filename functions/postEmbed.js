@@ -6,7 +6,7 @@ function postEmbed(day, channel, msg, description) {
     .setColor('#0099ff')
     .setTitle(`${info.days[day]}`)
     .setURL('https://time.is/')
-    .setAuthor('075 BCT AB', 'https://i.imgur.com/OQwR8CB.png', 'https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid')
+    .setAuthor(info.className, info.classLogo, info.classLink)
     .setDescription(description)
     .setThumbnail('https://i.imgur.com/cuLTlNe.png')
     .addFields(msg)

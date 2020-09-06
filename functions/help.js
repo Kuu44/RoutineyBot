@@ -7,8 +7,7 @@ module.exports = {
 		const fs = require('fs');
     const info = require('../info.js');
 		const {
-		  prefix,
-		  token
+		  prefix
 		} = require('../auth.json');
     var msg = [{
 			name: 'help',
