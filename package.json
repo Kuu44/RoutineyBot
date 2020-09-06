@@ -1,7 +1,7 @@
 {
-  "name": "routiney-bot",
-  "version": "6.9.420.2",
+  "name": "routiney-bot",  
   "description": "Get your Routines, Right Here!",
+  "version": "6.9.420.2",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
@@ -9,9 +9,8 @@
   "author": "Kuu44, Bishad, Goley",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-    "discord.js": "12.3.1",
+    "discord.js": "11.1.0",
     "node-schedule": "^1.3.2",
-    "request": "^2.81.0",
-    "winston": "3.3.3"
+    "request": "2.81.0"
   }
 }
