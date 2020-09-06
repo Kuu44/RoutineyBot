@@ -2,74 +2,59 @@ module.exports = {
   name: "notifications",
   description: "Turn on the routine notifications",
   execute(message, args) {
-    const { routine } = require("../info.json");
+    const {
+      routine
+    } = require("../info.js");
     const setNotification = require("../functions/setNotification");
-    
-
-    //TIme 15 minutes early
-    const getTime = (time) => {
-      var total = time[0] * 60 + time[1];
-      total -= 15;
-      return [Math.floor(total / 60), total % 60];
-    };
+    const {
+      inMinutes,
+      convertTime,
+      getTime
+    } = require('../functions/timeConvert.js');
 
     var today = new Date();
     const day = today.getDay();
-   
-    if(day==6){ /// Saturday
-      message.channel.send(" No classes today . Happy Holidays");
-    }else{
 
-    
-    // console.log(routine[day]._periods);
-
-    // var schedule = require("node-schedule");
-    // setNotification(schedule, message.channel, "Notification goes off", [
-    //   20,
-    //   12,
-    // ]);
-
-    var schedule = require("node-schedule");
-    var channelName = args[0];
-    var channelId = "";
-    if (channelName == undefined) {
-      channelId = message.channel.id;
+    if (day == 6) { /// Saturday
+      message.channel.send(" No classes today . Happy Holidays :partying_face:");
     } else {
-      channelId = channelName.substr(
-        channelName.toString().search("<") + 2,
-        channelName.toString().search(">") - 2
+      // console.log(routine[day]._periods);
+
+      // var schedule = require("node-schedule");
+      // setNotification(schedule, message.channel, "Notification goes off", [
+      //   20,
+      //   12,
+      // ]);
+
+      var schedule = require("node-schedule");
+
+      const info = require('../info.js');
+      const channelId = info.channelId;
+
+      var notificationChannel = message.guild.channels.cache.find(
+        (u) => u.id == channelId
       );
+      if (notificationChannel != undefined) {
+        routine[day]._periods.forEach((item, index) => {
+          //console.log(item);
+          if (item != 'END') {
+            var notificationMessage = `  ${item}  ${routine[day]._teachers[index]} Start time : ${routine[day]._timing[index][0]} Notification time:   ${getTime(routine[day]._timing[index][0])} `;
+            console.log(notificationMessage);
+
+            setNotification(day, schedule, notificationChannel, ` starts in 15 minutes`, getTime(routine[day]._timing[index][0]), index);
+            setNotification(day, schedule, notificationChannel, ` has started`, routine[day]._timing[index][0], index);
+          }
+        });
+        notificationChannel.send(" Notifications turned on ");
+        message.channel.send(
+          `Notifications turned on in <#${notificationChannel.id}> channel`
+        );
+      } else {
+        message.channel.send(" Channel not found ");
+      }
+
     }
-    var notificationChannel = message.guild.channels.cache.find(
-      (u) => u.id == channelId
-    );
-    if (notificationChannel != undefined) {
-      routine[day]._periods.forEach((item, index) => {
-        //console.log(item);
-        if(item!='END'){ 
-          var notificationMessage=`  ${item}  ${routine[day]._teachers[index]} Start time : ${routine[day]._timing[index][0]} Notification time:   ${getTime(routine[day]._timing[index][0])} `;
-          //message.channel.send(notificationMessage);
-          console.log(notificationMessage);
-          setNotification(schedule, notificationChannel, `${item} period starts in 15 minutes `,getTime(routine[day]._timing[index][0]) );
-          setNotification(schedule, notificationChannel, `${item} period has started  `,routine[day]._timing[index][0]) ;
-        }
-      });
-      notificationChannel.send(" Notifications turned on ");
-      message.channel.send(
-        `Notifications turned on in <#${notificationChannel.id}> channel`
-      );
-
-
-
-
-
-
-    } else {
-      message.channel.send(" Channel not found ");
-    }
-
   }
-  },
 };
 
 // DEPRACATED

@@ -3,15 +3,15 @@ const subjects = ["Numerical Methods", "Instrumentation I", "Applied Math", "Mic
 ]; //List of subjects
 const emotes = [":bar_chart:", ":control_knobs:", ":construction_site:", ":robot:", ":cd:", ":calendar_spiral:", ":satellite_orbital:"]; //List of emotes
 const teachers = ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JRS", "LAB"]; //List of teachers
-const emotePNGS =[
-                  "https://hotemoji.com/images/dl/t/bar-chart-emoji-by-twitter.png",
-                  "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/55878/control-knobs-emoji-clipart-md.png",
-                  "https://hotemoji.com/images/dl/r/building-construction-emoji-by-twitter.png",
-                  "https://images.emojiterra.com/twitter/512px/1f916.png",
-                  "https://i.imgur.com/HyOwb0R.png",
-                  "https://images.emojiterra.com/twitter/512px/1f5d3.png",
-                  "https://i.imgur.com/XkqSXIE.png"
-                  ];
+const emotePNGS = [
+  "https://hotemoji.com/images/dl/t/bar-chart-emoji-by-twitter.png",
+  "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/55878/control-knobs-emoji-clipart-md.png",
+  "https://hotemoji.com/images/dl/r/building-construction-emoji-by-twitter.png",
+  "https://images.emojiterra.com/twitter/512px/1f916.png",
+  "https://i.imgur.com/HyOwb0R.png",
+  "https://images.emojiterra.com/twitter/512px/1f5d3.png",
+  "https://i.imgur.com/XkqSXIE.png"
+];
 //0. Numerical Methods;:bar_chart:;SG;JRS
 //1. Instrumentation I,:control_knobs:;MB;
 //2. Applied Math;:construction_site:;SG;SKM;JG
@@ -25,6 +25,7 @@ const emotePNGS =[
 //10. Instrumentation I,:control_knobs:;LAB;
 
 const info = {
+  "channelId": 742020361440198750,
   "routine": [
     {
       "_emotes": [emotes[0], emotes[0], emotes[1], emotes[1], "", emotes[2], emotes[2], emotes[0], "END"],
@@ -33,35 +34,39 @@ const info = {
       "_teachers": [teachers[0], teachers[0], teachers[1], teachers[1], "", teachers[8], teachers[0], teachers[9], "END"],
       "_timing": [
         [
-          [10, 15],
+          [18, 22],
           [11, 5]
         ],
         [
-          [11, 5],
+          [18, 38],
           [11, 55]
         ],
         [
-          [11, 55],
+          [18, 24],
           [12, 45]
         ],
         [
-          [12, 45],
+          [18, 40],
           [13, 35]
         ],
         [
-          [13, 35],
+          [18, 26],
           [14, 25]
         ],
         [
-          [14, 25],
+          [18, 42],
           [15, 15]
         ],
         [
-          [15, 15],
+          [18, 28],
+          [18, 20]
+        ],
+        [
+          [18, 44],
           [16, 5]
         ],
         [
-          [16, 5],
+          [18, 30],
           [16, 55]
         ]
       ]

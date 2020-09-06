@@ -9,7 +9,8 @@ module.exports = {
     const sendCurrent = require('../functions/sendCurrent.js');
     const {
       inMinutes,
-      convertTime
+      convertTime,
+      getTime
     } = require('../functions/timeConvert.js');
 
     var day;

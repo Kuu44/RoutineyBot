@@ -15,7 +15,8 @@ function sendCurrent(day, currTime, position, msg, channel) {
   //time is an array of form : [[startHour,startMinute], [startMinute,endMinute]]; startHour= time[0][0]
   //function to calculate "now" time
   const currentFormattedTime = convertTime(currTime);
-  if(position<6) time = timing[position];
+  if(position<timing.length) time = timing[position];
+  console.log(position+' '+time+' '+timing[position]);
   if (!time) {
     classTime = `Chill :wink:`;
   } else {

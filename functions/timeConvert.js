@@ -14,7 +14,15 @@ function convertTime(clock) {
   return `${clock[0]}:${clock[1]}${firstM}`;
 };
 
+//TIme 15 minutes early
+const getTime = (time) => {
+  var total = time[0] * 60 + time[1];
+  total -= 15;
+  return [Math.floor(total / 60), total % 60];
+};
+
 module.exports={
   inMinutes,
-  convertTime
+  convertTime,
+  getTime
 };
