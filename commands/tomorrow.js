@@ -9,7 +9,7 @@ module.exports = {
     var day = today.getDay() + 1;
     day = (day > 6) ? 0 : day;
     if (day===6) {
-      return message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, ${message.author.username}! :partying_face:`);
+      return message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, <@!${message.author.id}>! :partying_face:`);
     }
     const msg = msgCreate(day);
     postEmbed(day, message.channel, msg, 'Tomorrow\'s Classes:');

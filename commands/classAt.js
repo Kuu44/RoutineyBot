@@ -1,7 +1,7 @@
 module.exports = {
   name: 'classat',
   args: true,
-  usage: 'rt! sample <dayOfWeek> <Hour(in 24)> <Minute>',
+  usage: 'rt! classat <dayOfWeek> <Hour(in 24)> <Minute>',
   description: 'shows class at the given time',
   execute(message, args) {
     const Discord = require('discord.js');
@@ -35,7 +35,7 @@ module.exports = {
         day = 5;
         break;
       case "saturday":
-      	message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, ${message.author.username}! :partying_face:`);
+      	message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, <@!${message.author.id}>! :partying_face:`);
         return;
         break;
       default:

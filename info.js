@@ -25,13 +25,12 @@ const emotePNGS = [
 //10. Instrumentation I,:control_knobs:;LAB;
 
 const info = {
-  "className":"075 BCT AB",
-  "classLogo":"https://i.imgur.com/OQwR8CB.png",
-  "classLink":"https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid",
-  "preTime":15,
-  "channelId": 742020361440198750,
-  "routine": [
-    {
+  "className": "075 BCT AB",
+  "classLogo": "https://i.imgur.com/OQwR8CB.png",
+  "classLink": "https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid",
+  "preTime": 15,
+  "channelId": 750431836827680898,
+  "routine": [{
       "_emotes": [emotes[0], emotes[1], "", emotes[2], emotes[0], "END"],
       "_emotePNGs": [emotePNGS[0], emotePNGS[1], "", emotePNGS[2], emotePNGS[0], "END"],
       "_periods": [subjects[0], subjects[1], "B", subjects[2], subjects[0], "END"],
@@ -122,8 +121,8 @@ const info = {
     {
       "_emotes": [emotes[1], emotes[6], "", emotes[3], "END"],
       "_emotePNGs": [emotePNGS[1], emotePNGS[6], "", emotePNGS[3], "END"],
-      "_periods": [subjects[1],subjects[6], "B", subjects[3], "END"],
-      "_teachers": [teachers[1],teachers[6], "", teachers[10], "END"],
+      "_periods": [subjects[1], subjects[6], "B", subjects[3], "END"],
+      "_teachers": [teachers[1], teachers[6], "", teachers[10], "END"],
       "_timing": [
         [
           [10, 15],
@@ -172,7 +171,7 @@ const info = {
       ]
     },
     {
-      "_emotes": ["", emotes[3],"", emotes[2], emotes[0], "END"],
+      "_emotes": ["", emotes[3], "", emotes[2], emotes[0], "END"],
       "_emotePNGs": ["", emotePNGS[3], "", emotePNGS[2], emotePNGS[0], "END"],
       "_periods": [" ", subjects[3], "B", subjects[2], subjects[0], "END"],
       "_teachers": ["", teachers[3], "", teachers[0], teachers[10], "END"],

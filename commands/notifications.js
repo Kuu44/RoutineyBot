@@ -11,21 +11,7 @@ module.exports = {
       convertTime,
       getTime
     } = require('../functions/timeConvert.js');
-
-    var today = new Date();
-    const day = today.getDay();
-
-    if (day == 6) { /// Saturday
-      message.channel.send(" No classes today . Happy Holidays :partying_face:");
-    } else {
-      // console.log(routine[day]._periods);
-
-      // var schedule = require("node-schedule");
-      // setNotification(schedule, message.channel, "Notification goes off", [
-      //   20,
-      //   12,
-      // ]);
-
+    const sendCurrent = require('../functions/sendCurrent.js');
       var schedule = require("node-schedule");
 
       const info = require('../info.js');
@@ -35,16 +21,37 @@ module.exports = {
         (u) => u.id == channelId
       );
       if (notificationChannel != undefined) {
+        for(var day=0; day<6; day++)
         routine[day]._periods.forEach((item, index) => {
           //console.log(item);
           if (item != 'END') {
             var notificationMessage = `  ${item}  ${routine[day]._teachers[index]} Start time : ${routine[day]._timing[index][0]} Notification time:   ${getTime(routine[day]._timing[index][0])} `;
-            console.log(notificationMessage);
+            console.log('Day '+day+' '+notificationMessage);
 
             setNotification(day, schedule, notificationChannel, ` starts in 15 minutes`, getTime(routine[day]._timing[index][0]), index);
             setNotification(day, schedule, notificationChannel, ` has started`, routine[day]._timing[index][0], index);
           }
         });
+        const time=[10,00];
+        const msg={
+          period: 'It\'s Saturday :partying_face:',
+          teacher: 'Time for your gaming :video_game:!',
+          quote: 'Ja beta, jiiley apni jindagi',
+          thumbnail: 'https://i.imgur.com/cuLTlNe.png'
+        }
+        sendCurrent(6, time, 10, msg, notificationChannel);
+        //Saturday
+        var j = schedule.scheduleJob(`10 00 * * 6`, function() {
+          const time=[10,00];
+          const msg={
+            period: 'It\'s Saturday :partying_face:',
+            teacher: 'Time for your gaming :video_game:!',
+            quote: 'Ja beta, jiiley apni jindagi',
+            thumbnail: 'https://i.imgur.com/cuLTlNe.png'
+          }
+          sendCurrent(6, time, 10, msg, notificationChannel);
+        });
+
         notificationChannel.send(" Notifications turned on ");
         message.channel.send(
           `Notifications turned on in <#${notificationChannel.id}> channel`
@@ -54,7 +61,6 @@ module.exports = {
       }
 
     }
-  }
 };
 
 // DEPRACATED

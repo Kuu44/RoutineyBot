@@ -42,7 +42,7 @@ const setNotifications = (day, schedule, channel, notificationMessage, time, pos
         thumbnail: emotePNG[position]
       };
   }
-  var j = schedule.scheduleJob(`${time[1]} ${time[0]} * * *`, function() {
+  var j = schedule.scheduleJob(`${time[1]} ${time[0]} * * ${day}`, function() {
     sendCurrent(day, time, position, msg, channel);
   });
 };
