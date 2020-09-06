@@ -28,61 +28,41 @@ const info = {
   "channelId": 742020361440198750,
   "routine": [
     {
-      "_emotes": [emotes[0], emotes[0], emotes[1], emotes[1], "", emotes[2], emotes[2], emotes[0], "END"],
-      "_emotePNGs": [emotePNGS[0], emotePNGS[0], emotePNGS[1], emotePNGS[1], "", emotePNGS[2], emotePNGS[2], emotePNGS[0], "END"],
-      "_periods": [subjects[0], subjects[0], subjects[1], subjects[1], "B", subjects[2], subjects[2], subjects[0], "END"],
-      "_teachers": [teachers[0], teachers[0], teachers[1], teachers[1], "", teachers[8], teachers[0], teachers[9], "END"],
+      "_emotes": [emotes[0], emotes[1], "", emotes[2], emotes[0], "END"],
+      "_emotePNGs": [emotePNGS[0], emotePNGS[1], "", emotePNGS[2], emotePNGS[0], "END"],
+      "_periods": [subjects[0], subjects[1], "B", subjects[2], subjects[0], "END"],
+      "_teachers": [teachers[0], teachers[1], "", teachers[0], teachers[9], "END"],
       "_timing": [
         [
-          [18, 22],
-          [11, 5]
-        ],
-        [
-          [18, 38],
+          [10, 15],
           [11, 55]
         ],
         [
-          [18, 24],
-          [12, 45]
-        ],
-        [
-          [18, 40],
+          [11, 55],
           [13, 35]
         ],
         [
-          [18, 26],
-          [14, 25]
-        ],
-        [
-          [18, 42],
+          [13, 35],
           [15, 15]
         ],
         [
-          [18, 28],
-          [18, 20]
-        ],
-        [
-          [18, 44],
+          [15, 15],
           [16, 5]
         ],
         [
-          [18, 30],
+          [16, 5],
           [16, 55]
         ]
       ]
     },
     {
-      "_emotes": [emotes[3], emotes[3], emotes[0], "", emotes[2], emotes[4], emotes[4], emotes[4], "END"],
-      "_emotePNGs": [emotePNGS[3], emotePNGS[3], emotePNGS[0], "", emotePNGS[2], emotePNGS[4], emotePNGS[4], emotePNGS[4], "END"],
-      "_periods": [subjects[3], subjects[3], subjects[0], "B", subjects[2], subjects[4], subjects[4], subjects[4], "END"],
-      "_teachers": [teachers[3], teachers[3], teachers[7], "", teachers[2], teachers[10], teachers[10], teachers[10], "END"],
+      "_emotes": [emotes[3], emotes[0], "", emotes[2], emotes[4], "END"],
+      "_emotePNGs": [emotePNGS[3], emotePNGS[0], "", emotePNGS[2], emotePNGS[4], "END"],
+      "_periods": [subjects[3], subjects[0], "B", subjects[2], subjects[4], "END"],
+      "_teachers": [teachers[3], teachers[7], "", teachers[2], teachers[10], "END"],
       "_timing": [
         [
           [10, 15],
-          [11, 5]
-        ],
-        [
-          [11, 5],
           [11, 55]
         ],
         [
@@ -91,6 +71,30 @@ const info = {
         ],
         [
           [12, 45],
+          [13, 35]
+        ],
+        [
+          [13, 35],
+          [14, 25]
+        ],
+        [
+          [14, 25],
+          [16, 55]
+        ]
+      ]
+    },
+    {
+      "_emotes": [emotes[4], emotes[5], "", "END"],
+      "_emotePNGs": [emotePNGS[4], emotePNGS[5], "", "END"],
+      "_periods": [subjects[4], subjects[5], "B", "END"],
+      "_teachers": [teachers[4], teachers[5], "", "END"],
+      "_timing": [
+        [
+          [10, 15],
+          [11, 55]
+        ],
+        [
+          [11, 55],
           [13, 35]
         ],
         [
@@ -112,25 +116,17 @@ const info = {
       ]
     },
     {
-      "_emotes": [emotes[4], emotes[4], emotes[5], emotes[5], "", "END"],
-      "_emotePNGs": [emotePNGS[4], emotePNGS[4], emotePNGS[5], emotePNGS[5], "", "END"],
-      "_periods": [subjects[4], subjects[4], subjects[5], subjects[5], "B", "END"],
-      "_teachers": [teachers[4], teachers[4], teachers[5], teachers[5], "", "END"],
+      "_emotes": [emotes[1], emotes[6], "", emotes[3], "END"],
+      "_emotePNGs": [emotePNGS[1], emotePNGS[6], "", emotePNGS[3], "END"],
+      "_periods": [subjects[1],subjects[6], "B", subjects[3], "END"],
+      "_teachers": [teachers[1],teachers[6], "", teachers[10], "END"],
       "_timing": [
         [
           [10, 15],
-          [11, 5]
-        ],
-        [
-          [11, 5],
           [11, 55]
         ],
         [
           [11, 55],
-          [12, 45]
-        ],
-        [
-          [12, 45],
           [13, 35]
         ],
         [
@@ -139,30 +135,18 @@ const info = {
         ],
         [
           [14, 25],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
           [16, 55]
         ]
       ]
     },
     {
-      "_emotes": [emotes[1], emotes[1], emotes[6], emotes[6], "", emotes[3], emotes[3], emotes[3], "END"],
-      "_emotePNGs": [emotePNGS[1], emotePNGS[1], emotePNGS[6], emotePNGS[6], "", emotePNGS[3], emotePNGS[3], emotePNGS[3], "END"],
-      "_periods": [subjects[1], subjects[1], subjects[6], subjects[6], "B", subjects[3], subjects[3], subjects[3], "END"],
-      "_teachers": [teachers[1], teachers[1], teachers[6], teachers[6], "", teachers[10], teachers[10], teachers[10], "END"],
+      "_emotes": [emotes[6], emotes[5], "", emotes[4], emotes[6], "END"],
+      "_emotePNGs": [emotePNGS[6], emotePNGS[5], "", emotePNGS[4], emotePNGS[6], "END"],
+      "_periods": [subjects[6], subjects[5], "B", subjects[4], " Electric Machine / :control_knobs: Instrumentation I", "END"],
+      "_teachers": [teachers[6], teachers[5], "", teachers[4], teachers[10], "END"],
       "_timing": [
         [
           [10, 15],
-          [11, 5]
-        ],
-        [
-          [11, 5],
           [11, 55]
         ],
         [
@@ -179,23 +163,15 @@ const info = {
         ],
         [
           [14, 25],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
           [16, 55]
         ]
       ]
     },
     {
-      "_emotes": [emotes[6], emotes[6], emotes[5], "", emotes[4], emotes[6], emotes[6], "END"],
-      "_emotePNGs": [emotePNGS[6], emotePNGS[6], emotePNGS[5], "", emotePNGS[4], emotePNGS[6], emotePNGS[6], "END"],
-      "_periods": [subjects[6], subjects[6], subjects[5], "B", subjects[4], " Electric Machine / :control_knobs: Instrumentation I", " Electric Machine / :control_knobs: Instrumentation I", "END"],
-      "_teachers": [teachers[6], teachers[6], teachers[5], "", teachers[4], teachers[10], teachers[10], "END"],
+      "_emotes": ["", emotes[3],"", emotes[2], emotes[0], "END"],
+      "_emotePNGs": ["", emotePNGS[3], "", emotePNGS[2], emotePNGS[0], "END"],
+      "_periods": [" ", subjects[3], "B", subjects[2], subjects[0], "END"],
+      "_teachers": ["", teachers[3], "", teachers[0], teachers[10], "END"],
       "_timing": [
         [
           [10, 15],
@@ -203,10 +179,6 @@ const info = {
         ],
         [
           [11, 5],
-          [11, 55]
-        ],
-        [
-          [11, 55],
           [12, 45]
         ],
         [
@@ -219,54 +191,6 @@ const info = {
         ],
         [
           [14, 25],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
-          [16, 55]
-        ]
-      ]
-    },
-    {
-      "_emotes": ["", emotes[3], emotes[3], "", emotes[2], emotes[0], emotes[0], "END"],
-      "_emotePNGs": ["", emotePNGS[3], emotePNGS[3], "", emotePNGS[2], emotePNGS[0], emotePNGS[0], "END"],
-      "_periods": [" ", subjects[3], subjects[3], "B", subjects[2], subjects[0], subjects[0], "END"],
-      "_teachers": ["", teachers[3], teachers[3], "", teachers[0], teachers[10], teachers[10], "END"],
-      "_timing": [
-        [
-          [10, 15],
-          [11, 5]
-        ],
-        [
-          [11, 5],
-          [11, 55]
-        ],
-        [
-          [11, 55],
-          [12, 45]
-        ],
-        [
-          [12, 45],
-          [13, 35]
-        ],
-        [
-          [13, 35],
-          [14, 25]
-        ],
-        [
-          [14, 25],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
           [16, 55]
         ]
       ]
