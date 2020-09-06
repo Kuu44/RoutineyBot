@@ -6,9 +6,12 @@ module.exports = {
     const msgCreate = require('../functions/post.js');
     const postEmbed = require('../functions/postEmbed.js');
     var today = new Date();
-    const day = today.getDay() + 1;
-
+    var day = today.getDay() + 1;
+    day = (day > 6) ? 0 : day;
+    if (day===6) {
+      return message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, <@!${message.author.id}>! :partying_face:`);
+    }
     const msg = msgCreate(day);
-    postEmbed(day, message, msg, 'Tomorrow\'s Classes:');
+    postEmbed(day, message.channel, msg, 'Tomorrow\'s Classes:');
   },
 };

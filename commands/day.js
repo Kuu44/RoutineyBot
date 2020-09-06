@@ -29,7 +29,7 @@ module.exports = {
         day = 5;
         break;
       case "saturday":
-        message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, ${message.author.username}! :partying_face:`);
+        message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, <@!${message.author.id}>! :partying_face:`);
         return;
         break;
       default:
@@ -38,6 +38,6 @@ module.exports = {
     }
 
     const msg = msgCreate(day);
-    postEmbed(day, message, msg, 'Classes For The Day:');
+    postEmbed(day, message.channel, msg, 'Classes For The Day:');
   },
 };

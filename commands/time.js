@@ -4,7 +4,7 @@ module.exports = {
   description: 'Gives today\'s date and time',
   execute(message, args) {
     const Discord = require('discord.js');
-    const info = require('../info.json');
+    const info = require('../info.js');
 
     var today = new Date();
     var date = `${today.getDate()} ${info.months[(today.getMonth() + 1)]} ${today.getFullYear()}`;

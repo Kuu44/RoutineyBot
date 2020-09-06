@@ -9,6 +9,6 @@ module.exports = {
     const day = today.getDay();
 
     const msg = msgCreate(day);
-    postEmbed(day, message, msg, 'Today\'s Classes:');
+    postEmbed(day, message.channel, msg, 'Today\'s Classes:');
   }
 };
