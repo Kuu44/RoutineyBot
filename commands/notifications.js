@@ -14,7 +14,7 @@ module.exports = {
     };
 
     var today = new Date();
-    const day = today.getDay()-1;
+    const day = today.getDay();
    
     if(day==6){ /// Saturday
       message.channel.send(" No classes today . Happy Holidays");
