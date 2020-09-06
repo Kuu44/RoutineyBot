@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'howru',
 	args: false,
-	description: 'Tells us how the bot is feeling',
+	description: 'Tells us how the bot is feeling today',
 	execute(message, args, today) {
 		const info = require('../info.js');
 		var today = new Date();

@@ -67,10 +67,10 @@ const info = {
       ]
     },
     {
-      "_emotes": [emotes[3], emotes[3], emotes[0], emotes[0], "", emotes[2], emotes[4], emotes[4], emotes[4], "END"],
-      "_emotePNGSs": [emotePNGS[3], emotePNGS[3], emotePNGS[0], emotePNGS[0], "", emotePNGS[2], emotePNGS[4], emotePNGS[4], emotePNGS[4], "END"],
-      "_periods": [subjects[3], subjects[3], subjects[0], subjects[0], "B", subjects[2], subjects[4], subjects[4], subjects[4], "END"],
-      "_teachers": [teachers[3], teachers[3], teachers[7], teachers[7], "", teachers[2], teachers[10], teachers[10], teachers[10], "END"],
+      "_emotes": [emotes[3], emotes[3], emotes[0], "", emotes[2], emotes[4], emotes[4], emotes[4], "END"],
+      "_emotePNGs": [emotePNGS[3], emotePNGS[3], emotePNGS[0], "", emotePNGS[2], emotePNGS[4], emotePNGS[4], emotePNGS[4], "END"],
+      "_periods": [subjects[3], subjects[3], subjects[0], "B", subjects[2], subjects[4], subjects[4], subjects[4], "END"],
+      "_teachers": [teachers[3], teachers[3], teachers[7], "", teachers[2], teachers[10], teachers[10], teachers[10], "END"],
       "_timing": [
         [
           [10, 15],

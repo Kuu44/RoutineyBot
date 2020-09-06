@@ -22,6 +22,7 @@ function msgCreate(day) {
 
   var i = 0;
   while (periods[i] != "END") {
+    console.log(i);
     const time = `${i+1}th Period • ${convertTime(timing[i][0])} - ${convertTime(timing[i][1])}`;
     switch (periods[i]) {
       case 'B':
