@@ -37,7 +37,8 @@ module.exports = {
           });
 
         //Saturday
-        var j = schedule.scheduleJob(`10 00 * * 6`, function() {
+        var j = schedule.scheduleJob(`15 45 * * 6`, function() {
+        //var j = schedule.scheduleJob(`10 00 * * 6`, function() {
           const time = [10, 00];
           const msg = {
             period: 'It\'s Saturday :partying_face:',

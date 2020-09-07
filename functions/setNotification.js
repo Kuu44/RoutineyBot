@@ -7,6 +7,9 @@
 const setNotifications = (day, schedule, channel, notificationMessage, time, position) => {
   const sendCurrent = require('./sendCurrent.js');
   const info = require('../info.js');
+  const {
+    timeZoneFix
+  } = require('./timeConvert.js');
 
   const periods = info.routine[day]._periods;
   const teachers = info.routine[day]._teachers;
@@ -42,7 +45,9 @@ const setNotifications = (day, schedule, channel, notificationMessage, time, pos
         thumbnail: emotePNG[position]
       };
   }
-  var j = schedule.scheduleJob(`${time[1]} ${time[0]} * * ${day}`, function() {
+  //Time Zone conversion
+  const timeZone = timeZoneFix(time);
+  var j = schedule.scheduleJob(`${timeZone[1]} ${timeZone[0]} * * ${day}`, function() {
     sendCurrent(day, time, position, msg, channel);
   });
 };
