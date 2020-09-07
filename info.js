@@ -25,6 +25,8 @@ const emotePNGS = [
 //10. Instrumentation I,:control_knobs:;LAB;
 
 const info = {
+  "notificationsON":false,
+  "timeZoneFix":[5,45],
   "className": "075 BCT AB",
   "classLogo": "https://i.imgur.com/OQwR8CB.png",
   "classLink": "https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid",

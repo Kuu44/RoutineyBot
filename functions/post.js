@@ -1,29 +1,35 @@
 function msgCreate(day) {
   const info = require('../info.js');
+  const {
+    inMinutes,
+    convertTime,
+    getTime,
+    getCurrTime
+  } = require('./timeConvert.js');
   var msg = [];
   const emotes = info.routine[day]._emotes;
   const periods = info.routine[day]._periods;
   const teachers = info.routine[day]._teachers;
   const timing = info.routine[day]._timing;
 
-  function convertTime(clock) {
-    var firstM, hr, min;
-    if (clock[0] < 13) {
-      hr = clock[0];
-      firstM = 'AM';
-    } else {
-      hr = clock[0] - 12;
-      firstM = 'PM';
-    }
-    if (clock[1] < 10) min = '0' + clock[1];
-    else min = clock[1];
-    return `${hr}:${min}${firstM}`;
-  };
-
   var i = 0;
+  var time;
   while (periods[i] != "END") {
     //console.log(i);
-    const time = `${i+1}th Period • ${convertTime(timing[i][0])} - ${convertTime(timing[i][1])}`;
+    switch (i + 1) {
+      case 1:
+        time = `1st Period`;
+        break;
+      case 2:
+        time = `2nd Period`;
+        break;
+      case 3:
+        time = `3rd Period`;
+        break;
+      default:
+        time = `${i+1}th Period`;
+    }
+    time += ` • ${convertTime(timing[i][0])} - ${convertTime(timing[i][1])}`;
     switch (periods[i]) {
       case 'B':
         msg.push({

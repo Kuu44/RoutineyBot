@@ -9,13 +9,14 @@ module.exports = {
       const {
         inMinutes,
         convertTime,
-        getTime
+        getTime,
+        getCurrTime
       } = require('../functions/timeConvert.js');
 
       var today = new Date();
       const day = today.getDay();
 
-      var currTime = [today.getHours(), today.getMinutes()];
+      var currTime = getCurrTime();
 
       var msg;
       var classTime;
