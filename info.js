@@ -1,5 +1,5 @@
 const subjects = ["Thermodynamics", "Math II", "Workshop Technology", "Chemistry", "Basic Electronics Engineering", "Engineering Drawing"] ;//List of subjects
-const emotes = [":thermometer:",":bar_chart:"," :hammer:",":lab_coat:",":control_knobs:",":triangular_ruler:"] //List of emotes
+const emotes = [":thermometer:",":bar_chart:",":hammer:",":lab_coat:",":control_knobs:",":triangular_ruler:"] //List of emotes
 const teachers = ["AKJ", "GG","NA","SP","JKM","RC","JG","AKB","PA","RMS","AS","SJ","SST","LAB"] //List of teachers
 const emotePNGS = [
   "https://hotemoji.com/images/dl/t/bar-chart-emoji-by-twitter.png",
@@ -10,14 +10,15 @@ const emotePNGS = [
   "https://images.emojiterra.com/twitter/512px/1f5d3.png",
   "https://i.imgur.com/XkqSXIE.png"
 ];
-//0. Thermodynamics; ; AKJ
-//1. Math II; ; GG; JG; AKB; PA
-//2. Workshop Technology; ; NA
-//3. Chemistry; ; SP; RMS; AS; SJ
-//4. Basic Electronics Engineering; ; JKM; SST
-//5. Engineering Drawing; ; RC
-//6. Thermodynamics; ; LAB
-//7. Basic Electronics Engineering; ; LAB
+//0. Thermodynamics;:thermometer:; AKJ
+//1. Math II;:bar_chart: ; GG; JG; AKB; PA
+//2. Workshop Technology; :hammer:; NA
+//3. Chemistry;:lab_coat:; SP; RMS; AS; SJ
+//4. Basic Electronics Engineering;:control_knobs:; JKM; SST
+//5. Engineering Drawing;:triangular_ruler:; RC
+//6. Thermodynamics;:thermometer: ; LAB
+//7. Basic Electronics Engineering;:control_knobs:; LAB
+//8. Chemistry;:lab_coat:;LAB
 
 const info = {
   "notificationsON":false,
