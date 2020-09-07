@@ -32,14 +32,7 @@ module.exports = {
             setNotification(day, schedule, notificationChannel, ` has started`, routine[day]._timing[index][0], index);
           }
         });
-        const time=[10,00];
-        const msg={
-          period: 'It\'s Saturday :partying_face:',
-          teacher: 'Time for your gaming :video_game:!',
-          quote: 'Ja beta, jiiley apni jindagi',
-          thumbnail: 'https://i.imgur.com/cuLTlNe.png'
-        }
-        sendCurrent(6, time, 10, msg, notificationChannel);
+                
         //Saturday
         var j = schedule.scheduleJob(`10 00 * * 6`, function() {
           const time=[10,00];

@@ -39,12 +39,12 @@ bot.on('message', message => {
   if (!bot.commands.has(commandName)) return message.channel.send(`Hmm I dont seem to have this command, ${message.author}!:sweat_smile:\nTry **rt! help** for more details!`);
   const command = bot.commands.get(commandName);
   if (command.args && !args.length) {
-    return message.channel.send(`You didnt provide any argument, ${message.author}!\nUsage: ${command.usage}`);
+    return message.channel.send(`You didn't provide any argument, ${message.author} :sweat_smile:!\nUsage: ${command.usage}`);
   }
   try {
     command.execute(message, args);
   } catch (error) {
     console.error(error);
-    message.reply('There was an error trying to execute that command!');
+    message.reply('There was an error trying to execute that command! :sweat_smile:');
   }
 });
