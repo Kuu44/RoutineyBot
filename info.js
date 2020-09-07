@@ -31,8 +31,8 @@ const info = {
   "classLogo": "https://i.imgur.com/OQwR8CB.png",
   "classLink": "https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid",
   "preTime": 15,
-  "channelId": 750431836827680898, //The Collusion: #routine
-  //"channelId": 742020361440198750,////kuu's Crib: #server-mgmt
+  //"channelId": 750431836827680898, //The Collusion: #routine
+  "channelId": 742020361440198750,////kuu's Crib: #server-mgmt
   "routine": [{
       "_emotes": [emotes[0], emotes[1], "", emotes[2], emotes[0], "END"],
       "_emotePNGs": [emotePNGS[0], emotePNGS[1], "", emotePNGS[2], emotePNGS[0], "END"],
@@ -67,20 +67,40 @@ const info = {
       "_periods": [subjects[3], subjects[0], "B", subjects[2], subjects[4], "END"],
       "_teachers": [teachers[3], teachers[7], "", teachers[2], teachers[10], "END"],
       "_timing": [
+        // [
+        //   [10, 15],
+        //   [11, 55]
+        // ],
+        // [
+        //   [11, 55],
+        //   [12, 45]
+        // ],
+        // [
+        //   [12, 45],
+        //   [13, 35]
+        // ],
+        // [
+        //   [13, 35],
+        //   [14, 25]
+        // ],
+        // [
+        //   [14, 25],
+        //   [16, 55]
+        // ]
         [
-          [10, 15],
+          [12, 42],
           [11, 55]
         ],
         [
-          [11, 55],
+          [6, 57],
           [12, 45]
         ],
         [
-          [12, 45],
+          [12, 58],
           [13, 35]
         ],
         [
-          [13, 35],
+          [7, 13],
           [14, 25]
         ],
         [
