@@ -30,8 +30,8 @@ function timeZoneFix(time) {
 
   var total = time[0] * 60 + time[1];
   var totalFix = timeZoneFix[0] * 60 + timeZoneFix[1];
-  total += totalFix;
-  if (total > 1439) total -= 1439;
+  total -= totalFix;
+  if (total < 0) total += 1439;
   return [Math.floor(total / 60), total % 60];
 }
 
