@@ -56,10 +56,10 @@ const info = {
       ]
     },
     {
-      "_emotes": [emotes[3], emotes[0], "", emotes[2], emotes[4], "END"],
-      "_emotePNGs": [emotePNGS[3], emotePNGS[0], "", emotePNGS[2], emotePNGS[4], "END"],
-      "_periods": [subjects[3], subjects[0], "B", subjects[2], subjects[4], "END"],
-      "_teachers": [teachers[3], teachers[7], "", teachers[2], teachers[10], "END"],
+      "_emotes": [emotes[3], emotes[0], "", emotes[2], "", emotes[2], "END"],
+      "_emotePNGs": [emotePNGS[3], emotePNGS[0], "", emotePNGS[2], "", emotePNGS[2], "END"],
+      "_periods": [subjects[3], subjects[0], "B", subjects[2], "",subjects[2], "END"],
+      "_teachers": [teachers[3], teachers[7], "", teachers[2], "",teachers[8], "END"],
       "_timing": [
         [
           [10, 15],
@@ -79,15 +79,19 @@ const info = {
         ],
         [
           [14, 25],
-          [16, 55]
+          [16, 0]
+        ],
+        [
+          [16,0],
+          [17,15]
         ]
       ]
     },
     {
-      "_emotes": [emotes[4], emotes[5], "", "END"],
-      "_emotePNGs": [emotePNGS[4], emotePNGS[5], "", "END"],
-      "_periods": [subjects[4], subjects[5], "B", "END"],
-      "_teachers": [teachers[4], teachers[5], "", "END"],
+      "_emotes": [emotes[4], emotes[5], "", emotes[4], "END"],
+      "_emotePNGs": [emotePNGS[4], emotePNGS[5], "",_emotePNGs[4], "END"],
+      "_periods": [subjects[4], subjects[5], "B", subjects[4], "END"],
+      "_teachers": [teachers[4], teachers[5], "", teachers[10], "END"],
       "_timing": [
         [
           [10, 15],
@@ -103,14 +107,6 @@ const info = {
         ],
         [
           [14, 25],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
           [16, 55]
         ]
       ]
