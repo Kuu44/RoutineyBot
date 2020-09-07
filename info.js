@@ -31,7 +31,8 @@ const info = {
   "classLogo": "https://i.imgur.com/OQwR8CB.png",
   "classLink": "https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid",
   "preTime": 15,
-  "channelId": 750431836827680898,
+  // "channelId": 750431836827680898,
+  "channelId": 742020361440198750,
   "routine": [{
       "_emotes": [emotes[0], emotes[1], "", emotes[2], emotes[0], "END"],
       "_emotePNGs": [emotePNGS[0], emotePNGS[1], "", emotePNGS[2], emotePNGS[0], "END"],

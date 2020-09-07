@@ -47,6 +47,7 @@ const setNotifications = (day, schedule, channel, notificationMessage, time, pos
   }
   //Time Zone conversion
   const timeZone = timeZoneFix(time);
+  console.log(timeZone);
   var j = schedule.scheduleJob(`${timeZone[1]} ${timeZone[0]} * * ${day}`, function() {
     sendCurrent(day, time, position, msg, channel);
   });

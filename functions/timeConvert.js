@@ -24,6 +24,10 @@ const getTime = (time) => {
 };
 
 function timeZoneFix(time) {
+  const {
+    timeZoneFix
+  } = require('../info.js');
+
   var total = time[0] * 60 + time[1];
   var totalFix = timeZoneFix[0] * 60 + timeZoneFix[1];
   total += totalFix;
