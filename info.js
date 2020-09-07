@@ -1,8 +1,6 @@
-const subjects = ["Numerical Methods", "Instrumentation I", "Applied Math", "Microprocessor",
-  "Data Structure and Algorithm", "Discrete Structure", "Electric Machine"
-]; //List of subjects
-const emotes = [":bar_chart:", ":control_knobs:", ":construction_site:", ":robot:", ":cd:", ":calendar_spiral:", ":satellite_orbital:"]; //List of emotes
-const teachers = ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JRS", "LAB"]; //List of teachers
+const subjects = ["Thermodynamics", "Math II", "Workshop Technology", "Chemistry", "Basic Electronics Engineering", "Engineering Drawing"] ;//List of subjects
+const emotes = [":thermometer:",":bar_chart:"," :hammer:",":lab_coat:",":control_knobs:",":triangular_ruler:"] //List of emotes
+const teachers = ["AKJ", "GG","NA","SP","JKM","RC","JG","AKB","PA","RMS","AS","SJ","SST","LAB"] //List of teachers
 const emotePNGS = [
   "https://hotemoji.com/images/dl/t/bar-chart-emoji-by-twitter.png",
   "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/55878/control-knobs-emoji-clipart-md.png",
@@ -12,17 +10,14 @@ const emotePNGS = [
   "https://images.emojiterra.com/twitter/512px/1f5d3.png",
   "https://i.imgur.com/XkqSXIE.png"
 ];
-//0. Numerical Methods;:bar_chart:;SG;JRS
-//1. Instrumentation I,:control_knobs:;MB;
-//2. Applied Math;:construction_site:;SG;SKM;JG
-//3. Microprocessor;:robot:;DSB;
-//4. Numerical Methods;:bar_chart:;BDM;
-//5. Data Structure and Algorithm;:cd:;BS;
-//6. Discrete Structure;:calendar_spiral:;SPP;
-//7. Electric Machine;:satellite_orbital:;KBT;
-//8. Data Structure and Algorithm;:cd:;LAB;
-//9. Microprocessor;:robot:;LAB;
-//10. Instrumentation I,:control_knobs:;LAB;
+//0. Thermodynamics; ; AKJ
+//1. Math II; ; GG; JG; AKB; PA
+//2. Workshop Technology; ; NA
+//3. Chemistry; ; SP; RMS; AS; SJ
+//4. Basic Electronics Engineering; ; JKM; SST
+//5. Engineering Drawing; ; RC
+//6. Thermodynamics; ; LAB
+//7. Basic Electronics Engineering; ; LAB
 
 const info = {
   "notificationsON":false,
@@ -35,38 +30,10 @@ const info = {
   // "channelId": 742020361440198750,////kuu's Crib: #server-mgmt
   "routine": [
     {
-      "_emotes": [emotes[0], emotes[1], "", emotes[2], emotes[0], "END"],
-      "_emotePNGs": [emotePNGS[0], emotePNGS[1], "", emotePNGS[2], emotePNGS[0], "END"],
-      "_periods": [subjects[0], subjects[1], "B", subjects[2], subjects[0], "END"],
-      "_teachers": [teachers[0], teachers[1], "", teachers[0], teachers[9], "END"],
-      "_timing": [
-        [
-          [10, 15],
-          [11, 55]
-        ],
-        [
-          [11, 55],
-          [13, 35]
-        ],
-        [
-          [13, 35],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
-          [16, 55]
-        ]
-      ]
-    },
-    {
-      "_emotes": [emotes[3], emotes[0], "", emotes[2], emotes[4], "END"],
-      "_emotePNGs": [emotePNGS[3], emotePNGS[0], "", emotePNGS[2], emotePNGS[4], "END"],
-      "_periods": [subjects[3], subjects[0], "B", subjects[2], subjects[4], "END"],
-      "_teachers": [teachers[3], teachers[7], "", teachers[2], teachers[10], "END"],
+      "_emotes": [emotes[0],emotes[1],"",emotes[2], "END"],
+      "_emotePNGs": [emotePNGS[0], emotePNGS[1], "", emotePNGS[2], "END"],
+      "_periods": [subjects[0], subjects[1], "B", subjects[2], "END"],
+      "_teachers": [teachers[0], teachers[1], "", teachers[2], "END"],
       "_timing": [
         [
           [10, 15],
@@ -91,101 +58,85 @@ const info = {
       ]
     },
     {
-      "_emotes": [emotes[4], emotes[5], "", "END"],
-      "_emotePNGs": [emotePNGS[4], emotePNGS[5], "", "END"],
-      "_periods": [subjects[4], subjects[5], "B", "END"],
-      "_teachers": [teachers[4], teachers[5], "", "END"],
+      "_emotes": [emotes[5],"END"],
+      "_emotePNGs": [emotePNGS[5], "END"],
+      "_periods": [subjects[5], "END"],
+      "_teachers": [teachers[5], "END"],
       "_timing": [
         [
           [10, 15],
-          [11, 55]
-        ],
-        [
-          [11, 55],
           [13, 35]
         ],
         [
           [13, 35],
-          [14, 25]
-        ],
-        [
-          [14, 25],
-          [15, 15]
-        ],
-        [
-          [15, 15],
-          [16, 5]
-        ],
-        [
-          [16, 5],
           [16, 55]
         ]
       ]
     },
     {
-      "_emotes": [emotes[1], emotes[6], "", emotes[3], "END"],
-      "_emotePNGs": [emotePNGS[1], emotePNGS[6], "", emotePNGS[3], "END"],
-      "_periods": [subjects[1], subjects[6], "B", subjects[3], "END"],
-      "_teachers": [teachers[1], teachers[6], "", teachers[10], "END"],
-      "_timing": [
-        [
-          [10, 15],
-          [11, 55]
-        ],
-        [
-          [11, 55],
-          [13, 35]
-        ],
-        [
-          [13, 35],
-          [14, 25]
-        ],
-        [
-          [14, 25],
-          [16, 55]
-        ]
-      ]
-    },
-    {
-      "_emotes": [emotes[6], emotes[5], "", emotes[4], emotes[6], "END"],
-      "_emotePNGs": [emotePNGS[6], emotePNGS[5], "", emotePNGS[4], emotePNGS[6], "END"],
-      "_periods": [subjects[6], subjects[5], "B", subjects[4], " Electric Machine / :control_knobs: Instrumentation I", "END"],
-      "_teachers": [teachers[6], teachers[5], "", teachers[4], teachers[10], "END"],
-      "_timing": [
-        [
-          [10, 15],
-          [11, 55]
-        ],
-        [
-          [11, 55],
-          [12, 45]
-        ],
-        [
-          [12, 45],
-          [13, 35]
-        ],
-        [
-          [13, 35],
-          [14, 25]
-        ],
-        [
-          [14, 25],
-          [16, 55]
-        ]
-      ]
-    },
-    {
-      "_emotes": ["", emotes[3], "", emotes[2], emotes[0], "END"],
-      "_emotePNGs": ["", emotePNGS[3], "", emotePNGS[2], emotePNGS[0], "END"],
-      "_periods": [" ", subjects[3], "B", subjects[2], subjects[0], "END"],
-      "_teachers": ["", teachers[3], "", teachers[0], teachers[10], "END"],
-      "_timing": [
+      "_emotes": [emotes[1], emotes[3], "", emotes[3], emotes[0], "END"],
+      "_emotePNGs": [emotePNGS[1], emotePNGS[3], "",emotePNGS[3],emotePNGS[0], "END"],
+      "_periods": [subjects[1], subjects[3], "B",subjects[3]," Thermodynamics/ :control_knobs: Basic Electronics Engineering", "END"],
+      "_teachers": [teachers[1], teachers[3],"",teachers[9], teachers[13],"END"],
+      "_timing":[
         [
           [10, 15],
           [11, 5]
         ],
         [
           [11, 5],
+          [11, 55]
+        ],
+        [
+          [11, 55],
+          [13, 35]
+        ],
+        [
+          [13, 35],
+          [14, 25]
+        ],
+        [
+          [14, 25],
+          [16, 55]
+        ]
+      ]
+    },
+    {
+      "_emotes": [emotes[0], emotes[4],"END"],
+      "_emotePNGs": [emotePNGS[0], emotePNGS[4], "END"],
+      "_periods": [subjects[0], subjects[4], "END"],
+      "_teachers": [teachers[0], teachers[4], "END"],
+      "_timing": [
+        [
+          [10, 15],
+          [11, 55]
+        ],
+        [
+          [11, 55],
+          [12, 45]
+        ],
+        [
+          [12, 45],
+          [16, 55]
+        ]
+      ]
+    },
+    {
+      "_emotes": [emotes[1], emotes[1], emotes[1], "", emotes[3], emotes[3], "END"],
+      "_emotePNGs": [emotePNGS[1], emotePNGS[1], emotePNGS[1], "", emotePNGS[3], emotePNGS[3], "END"],
+      "_periods": [subjects[1], subjects[1], subjects[1], "B", subjects[3], subjects[3],"END"],
+      "_teachers": [teachers[7], teachers[1], teachers[8], "", teachers[10], teachers[13], "END"],
+      "_timing":[
+        [
+          [10, 15],
+          [11, 5]
+        ],
+        [
+          [11, 5],
+          [11, 55]
+        ],
+        [
+          [11, 55],
           [12, 45]
         ],
         [
@@ -198,6 +149,34 @@ const info = {
         ],
         [
           [14, 25],
+          [16, 55]
+        ]
+      ]
+    },
+    {
+      "_emotes": ["", emotes[4], emotes[3], emotes[4], "END"],
+      "_emotePNGs": ["", emotePNGS[4], emotePNGS[3], emotePNGS[4], "END"],
+      "_periods": [" ", subjects[4], subjects[3], subjects[4], "END"],
+      "_teachers": ["", teachers[4], teachers[11], teachers[12], "END"],
+      "_timing": [
+        [
+          [10, 15],
+          [11, 55]
+        ],
+        [
+          [11, 55],
+          [13, 35]
+        ],
+        [
+          [13, 35],
+          [14, 25]
+        ],
+        [
+          [14, 25],
+          [16, 5]
+        ],
+        [
+          [16, 5],
           [16, 55]
         ]
       ]
