@@ -4,13 +4,14 @@ function inMinutes(time) {
 
 function convertTime(clock) {
   var firstM;
+  var hr = clock[0],
+    min = clock[1];
   if (clock[0] < 12) firstM = 'AM';
   else firstM = 'PM';
-  if (clock[0] > 12) clock[0] -= 12;
+  if (clock[0] > 12) hr = clock[0] - 12;
+  if (clock[1] < 10) min = '0' + clock[1];
 
-  if (clock[1] < 10) clock[1] = '0' + clock[1];
-
-  return `${clock[0]}:${clock[1]}${firstM}`;
+  return `${hr}:${min}${firstM}`;
 };
 
 //TIme 15 minutes early
@@ -45,8 +46,8 @@ function getCurrTime() {
   //return time;
   var total = time[0] * 60 + time[1];
   var totalFix = timeZoneFix[0] * 60 + timeZoneFix[1];
-  total -= totalFix;
-  if (total < 0) total += 1439;
+  total += totalFix;
+  if (total > 1439) total -= 1439;
   return [Math.floor(total / 60), total % 60];
 }
 module.exports = {
