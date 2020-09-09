@@ -107,44 +107,6 @@ const exampleEmbed = new Discord.MessageEmbed()
   .setFooter('Have a boring day studying! :P', 'https://i.imgur.com/cuLTlNe.png');
 message.channel.send(exampleEmbed);*/
 
-/*"_timing": [
-  [
-    [10, 15],
-    [11, 5]
-  ],
-  [
-    [11, 5],
-    [11, 55]
-  ],
-  [
-    [11, 55],
-    [12, 45]
-  ],
-  [
-    [12, 45],
-    [13, 35]
-  ],
-  [
-    [13, 35],
-    [14, 25]
-  ],
-  [
-    [14, 25],
-    [15, 15]
-  ],
-  [
-    [18, 13],
-    [18, 20]
-  ],
-  [
-    [15, 15],
-    [16, 5]
-  ],
-  [
-    [16, 5],
-    [16, 55]
-  ]
-]*/
 /*module.exports = {
 	name: 'args',
 	args: true,
@@ -155,3 +117,52 @@ message.channel.send(exampleEmbed);*/
 	},
 };
 */
+/*console.log(args[0]);
+var index = channelName.length;
+console.log(channelName.search("<"));
+console.log(channelName.search(">"));
+console.log(index - 2);
+console.log(
+  channelName.substr(
+    channelName.search("<") + 2,
+    channelName.search(">") - 2
+  )
+);*/
+
+/*message.guild.channels.create("routine-notifications", {
+  type: "text",
+});
+const yourchannel = message.guild.channels.find(
+  (channel) => channel.name === "General"
+);*/
+
+/*const object = {'a': 1, 'b': 2, 'c' : 3};
+for (const [key, value] of Object.entries(message.guild.channels.cache)) {
+  console.log(key);
+}
+message.channel.send("Task Scheduled");*/
+
+/*var notificationChannel = message.guild.channels.cache.find(
+  (u) => u.name == "routiney-notifications"
+);
+if (notificationChannel == undefined) {
+  message.guild.channels.create("routiney-notifications", {
+    type: "text",
+  });
+  var notificationChannel = message.guild.channels.cache.find(
+    (u) => u.name == "routiney-notifications"
+  );
+  notificationChannel.send(" Notifications turned on ");
+
+  message.channel.send(
+    "Notification channel created and notifications turned on "
+  );
+} else {
+  message.channel.send("Notification turned on ");
+}*/
+
+/*notificationChannel.delete();
+
+var j = schedule.scheduleJob("17 17 * * *", function () {
+  message.channel.send("This will print at 17:17.");
+});*/
