@@ -8,7 +8,7 @@ function postEmbed(day, channel, msg, description) {
     .setURL('https://time.is/')
     .setAuthor(info.className, info.classLogo, info.classLink)
     .setDescription(description)
-    .setThumbnail('https://i.imgur.com/cuLTlNe.png')
+    .setThumbnail('https://i.imgur.com/QrtHFpz.png')
     .addFields(msg)
     .setTimestamp()
     .setFooter('Have a boring day studying! :P', 'https://i.imgur.com/cuLTlNe.png');

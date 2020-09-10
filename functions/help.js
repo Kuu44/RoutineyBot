@@ -35,7 +35,7 @@ module.exports = {
       .setURL('https://github.com/Kuu44/RoutineyBot')
       .setAuthor('by Kuu44, Bishad and Goley', 'https://i.imgur.com/OQwR8CB.png', 'https://github.com/Kuu44/RoutineyBot')
       .setDescription('Prefix: '+prefix+'\nList of Available Commands:')
-      .setThumbnail('https://i.imgur.com/cuLTlNe.png')
+      .setThumbnail('https://i.imgur.com/QrtHFpz.png')
       .addFields(msg)
       .setTimestamp()
       .setFooter('Now go ahead and get those classes sorted! ', 'https://i.imgur.com/cuLTlNe.png');
