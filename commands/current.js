@@ -1,22 +1,36 @@
 module.exports = {
     name: 'current',
     args: false,
+    dontShow: false,
     description: 'What\'s the current torture on the menu?',
     execute(message, args) {
       const Discord = require('discord.js');
-      const info = require('../info.js');
+      var info = require('../info.js');
+      info = info[message.guild.id];
+
       const sendCurrent = require('../functions/sendCurrent.js');
       const {
         inMinutes,
         convertTime,
         getTime,
-        getCurrTime
+        getCurrTime,
+        getDay
       } = require('../functions/timeConvert.js');
 
-      var today = new Date();
-      const day = today.getDay();
+      const day = getDay(info.timeZoneFix);
+      const currTime = getCurrTime(info.timeZoneFix);
+      const currentFormattedTime = convertTime(currTime);
 
-      var currTime = getCurrTime();
+      if (day == 6) {
+        msg = {
+          period: 'It\'s a Saturday yarrr..',
+          teacher: 'Ja beta, jiiley apni jindagi :smile:',
+          quote: '<Time>: ' + currentFormattedTime,
+          thumbnail: 'https://i.imgur.com/cuLTlNe.png'
+        };
+        sendCurrent(day, 0, msg, message.channel, message.guild.id);
+        return;
+      }
 
       var msg;
       var classTime;
@@ -43,7 +57,6 @@ module.exports = {
         position++;
       }
 
-      const currentFormattedTime = convertTime(currTime);
       if (!time) {
         msg = {
           period: 'No Classes Right Now',
@@ -78,6 +91,6 @@ module.exports = {
             };
         }
       }
-      sendCurrent(day, currTime, position, msg, message.channel);
+      sendCurrent(day,position, msg, message.channel, message.guild.id);
     }
   };
