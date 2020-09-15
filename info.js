@@ -98,13 +98,12 @@ const emotePNGs = {
     "https://i.imgur.com/XkqSXIE.png"
   ],
   "BCT076": [
+    "https://www.emoji.co.uk/files/mozilla-emojis/objects-mozilla/11893-thermometer.png",
     "https://hotemoji.com/images/dl/t/bar-chart-emoji-by-twitter.png",
+    "https://i.imgur.com/czFMa9Q.png",
+    "https://hotemoji.com/images/dl/o/lab-coat-emoji-by-twitter.png",
     "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/55878/control-knobs-emoji-clipart-md.png",
-    "https://hotemoji.com/images/dl/r/building-construction-emoji-by-twitter.png",
-    "https://images.emojiterra.com/twitter/512px/1f916.png",
-    "https://i.imgur.com/HyOwb0R.png",
-    "https://images.emojiterra.com/twitter/512px/1f5d3.png",
-    "https://i.imgur.com/XkqSXIE.png"
+    "https://i.imgur.com/b5KsQQx.png"
   ]
 }; //List of emote pngs
 
