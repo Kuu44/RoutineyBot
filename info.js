@@ -4,9 +4,10 @@ For easy navigation, go to folding level 2
 Then fold line 1 ^^
 
 Subscribed Servers:
-BCT075 : #routine 750431836827680898
+BCT075 550704758055370767: #routine 750431836827680898
 kuu's Crib 544232674412462101: #server-mgmt 742020361440198750
-BCT076: # n
+BCT076 679306265674907671: #reminders 745136785666998303
+bot-test-server 681076561142611989: #routiney-bot-test 750653645174997093
 
 Guide:
 
@@ -75,7 +76,7 @@ const emotes = {
 const teachers = {
   "BCT075": ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JRS", "LAB"],
   "kuus": ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JRS", "LAB"],
-  "BCT076":["AKJ", "GG","NA","SP","JKM","RC","JG","AKB","PA","RMS","AS","SJ","SST","LAB"]
+  "BCT076": ["AKJ", "GG", "NA", "SP", "JKM", "RC", "JG", "AKB", "PA", "RMS", "AS", "SJ", "SST", "LAB"]
 }; //List of teachers
 const emotePNGs = {
   "BCT075": [
@@ -96,7 +97,7 @@ const emotePNGs = {
     "https://images.emojiterra.com/twitter/512px/1f5d3.png",
     "https://i.imgur.com/XkqSXIE.png"
   ],
-  "BCT076":[
+  "BCT076": [
     "https://hotemoji.com/images/dl/t/bar-chart-emoji-by-twitter.png",
     "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/55878/control-knobs-emoji-clipart-md.png",
     "https://hotemoji.com/images/dl/r/building-construction-emoji-by-twitter.png",
@@ -108,7 +109,7 @@ const emotePNGs = {
 }; //List of emote pngs
 
 const info = {
-  "BCT075": {
+  "550704758055370767" /*The Collusion*/: {
     "notificationsON": false,
     "timeZoneFix": [5, 45],
     "className": "075 BCT AB",
@@ -288,7 +289,7 @@ const info = {
   },
   "544232674412462101" /*kuu's*/: {
     "notificationsON": false,
-    "timeZoneFix": [0, 0],
+    "timeZoneFix": [5, 45],
     "className": "075 BCT AB",
     "classLogo": "https://i.imgur.com/OQwR8CB.png",
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
@@ -464,18 +465,194 @@ const info = {
       }
     ]
   },
-  "BCT076":{
-    "notificationsON":false,
-    "timeZoneFix":[5,45],
+  "681076561142611989" /*bot-test-server*/: {
+    "notificationsON": false,
+    "timeZoneFix": [5, 45],
+    "className": "075 BCT AB",
+    "classLogo": "https://i.imgur.com/OQwR8CB.png",
+    "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
+    "preTime": 15,
+    "channelId": 750653645174997093, //bot-test-server: #routiney-bot-test
+    "routine": [{
+        "_emotes": [emotes['kuus'][0], emotes['kuus'][1], "", emotes['kuus'][2], emotes['kuus'][0], "END"],
+        "_emotePNGs": [emotePNGs['kuus'][0], emotePNGs['kuus'][1], "", emotePNGs['kuus'][2], emotePNGs['kuus'][0], "END"],
+        "_periods": [subjects['kuus'][0], subjects['kuus'][1], "B", subjects['kuus'][2], subjects['kuus'][0], "END"],
+        "_teachers": [teachers['kuus'][0], teachers['kuus'][1], "", teachers['kuus'][0], teachers['kuus'][9], "END"],
+        "_timing": [
+          [
+            [10, 15],
+            [11, 55]
+          ],
+          [
+            [11, 55],
+            [13, 35]
+          ],
+          [
+            [13, 35],
+            [15, 15]
+          ],
+          [
+            [15, 15],
+            [16, 5]
+          ],
+          [
+            [16, 5],
+            [16, 55]
+          ]
+        ]
+      },
+      {
+        "_emotes": [emotes['kuus'][3], emotes['kuus'][0], "", emotes['kuus'][2], emotes['kuus'][4], "END"],
+        "_emotePNGs": [emotePNGs['kuus'][3], emotePNGs['kuus'][0], "", emotePNGs['kuus'][2], emotePNGs['kuus'][4], "END"],
+        "_periods": [subjects['kuus'][3], subjects['kuus'][0], "B", subjects['kuus'][2], subjects['kuus'][4], "END"],
+        "_teachers": [teachers['kuus'][3], teachers['kuus'][7], "", teachers['kuus'][2], teachers['kuus'][10], "END"],
+        "_timing": [
+          [
+            [10, 15],
+            [11, 55]
+          ],
+          [
+            [11, 55],
+            [12, 45]
+          ],
+          [
+            [12, 45],
+            [13, 35]
+          ],
+          [
+            [13, 35],
+            [14, 25]
+          ],
+          [
+            [14, 25],
+            [16, 55]
+          ]
+        ]
+      },
+      {
+        "_emotes": [emotes['kuus'][4], emotes['kuus'][5], "", "END"],
+        "_emotePNGs": [emotePNGs['kuus'][4], emotePNGs['kuus'][5], "", "END"],
+        "_periods": [subjects['kuus'][4], subjects['kuus'][5], "B", "END"],
+        "_teachers": [teachers['kuus'][4], teachers['kuus'][5], "", "END"],
+        "_timing": [
+          [
+            [10, 15],
+            [11, 55]
+          ],
+          [
+            [11, 55],
+            [13, 35]
+          ],
+          [
+            [13, 35],
+            [14, 25]
+          ],
+          [
+            [14, 25],
+            [15, 15]
+          ],
+          [
+            [15, 15],
+            [16, 5]
+          ],
+          [
+            [16, 5],
+            [16, 55]
+          ]
+        ]
+      },
+      {
+        "_emotes": [emotes['kuus'][1], emotes['kuus'][6], "", emotes['kuus'][3], "END"],
+        "_emotePNGs": [emotePNGs['kuus'][1], emotePNGs['kuus'][6], "", emotePNGs['kuus'][3], "END"],
+        "_periods": [subjects['kuus'][1], subjects['kuus'][6], "B", subjects['kuus'][3], "END"],
+        "_teachers": [teachers['kuus'][1], teachers['kuus'][6], "", teachers['kuus'][10], "END"],
+        "_timing": [
+          [
+            [10, 15],
+            [11, 55]
+          ],
+          [
+            [11, 55],
+            [13, 35]
+          ],
+          [
+            [13, 35],
+            [14, 25]
+          ],
+          [
+            [14, 25],
+            [16, 55]
+          ]
+        ]
+      },
+      {
+        "_emotes": [emotes['kuus'][6], emotes['kuus'][5], "", emotes['kuus'][4], emotes['kuus'][6], "END"],
+        "_emotePNGs": [emotePNGs['kuus'][6], emotePNGs['kuus'][5], "", emotePNGs['kuus'][4], emotePNGs['kuus'][6], "END"],
+        "_periods": [subjects['kuus'][6], subjects['kuus'][5], "B", subjects['kuus'][4], " Electric Machine / :control_knobs: Instrumentation I", "END"],
+        "_teachers": [teachers['kuus'][6], teachers['kuus'][5], "", teachers['kuus'][4], teachers['kuus'][10], "END"],
+        "_timing": [
+          [
+            [10, 15],
+            [11, 55]
+          ],
+          [
+            [11, 55],
+            [12, 45]
+          ],
+          [
+            [12, 45],
+            [13, 35]
+          ],
+          [
+            [13, 35],
+            [14, 25]
+          ],
+          [
+            [14, 25],
+            [16, 55]
+          ]
+        ]
+      },
+      {
+        "_emotes": ["", emotes['kuus'][3], "", emotes['kuus'][2], emotes['kuus'][0], "END"],
+        "_emotePNGs": ["", emotePNGs['kuus'][3], "", emotePNGs['kuus'][2], emotePNGs['kuus'][0], "END"],
+        "_periods": [" ", subjects['kuus'][3], "B", subjects['kuus'][2], subjects['kuus'][0], "END"],
+        "_teachers": ["", teachers['kuus'][3], "", teachers['kuus'][0], teachers['kuus'][10], "END"],
+        "_timing": [
+          [
+            [10, 15],
+            [11, 5]
+          ],
+          [
+            [11, 5],
+            [12, 45]
+          ],
+          [
+            [12, 45],
+            [13, 35]
+          ],
+          [
+            [13, 35],
+            [14, 25]
+          ],
+          [
+            [14, 25],
+            [16, 55]
+          ]
+        ]
+      }
+    ]
+  },
+  "679306265674907671": /*BCT076*/{
+    "notificationsON": false,
+    "timeZoneFix": [5, 45],
     "className": "076 BCT AB",
     "classLogo": "https://i.imgur.com/OQwR8CB.png",
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
-    "channelId": 750431836827680898, //The Collusion: #routine
-    // "channelId": 742020361440198750,////kuu's Crib: #server-mgmt
-    "routine": [
-      {
-        "_emotes": [emotes['BCT076'][0],emotes['BCT076'][1],"",emotes['BCT076'][2], "END"],
+    "channelId": 745136785666998303, //076-BCT-AB: #reminders
+    "routine": [{
+        "_emotes": [emotes['BCT076'][0], emotes['BCT076'][1], "", emotes['BCT076'][2], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][0], emotePNGs['BCT076'][1], "", emotePNGs['BCT076'][2], "END"],
         "_periods": [subjects['BCT076'][0], subjects['BCT076'][1], "B", subjects['BCT076'][2], "END"],
         "_teachers": [teachers['BCT076'][0], teachers['BCT076'][1], "", teachers['BCT076'][2], "END"],
@@ -503,7 +680,7 @@ const info = {
         ]
       },
       {
-        "_emotes": [emotes['BCT076'][5],"END"],
+        "_emotes": [emotes['BCT076'][5], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][5], "END"],
         "_periods": [subjects['BCT076'][5], "END"],
         "_teachers": [teachers['BCT076'][5], "END"],
@@ -520,10 +697,10 @@ const info = {
       },
       {
         "_emotes": [emotes['BCT076'][1], emotes['BCT076'][3], "", emotes['BCT076'][3], emotes['BCT076'][0], "END"],
-        "_emotePNGs": [emotePNGs['BCT076'][1], emotePNGs['BCT076'][3], "",emotePNGs['BCT076'][3],emotePNGs['BCT076'][0], "END"],
-        "_periods": [subjects['BCT076'][1], subjects['BCT076'][3], "B",subjects['BCT076'][3]," Thermodynamics/ :control_knobs: Basic Electronics Engineering", "END"],
-        "_teachers": [teachers['BCT076'][1], teachers['BCT076'][3],"",teachers['BCT076'][9], teachers['BCT076'][13],"END"],
-        "_timing":[
+        "_emotePNGs": [emotePNGs['BCT076'][1], emotePNGs['BCT076'][3], "", emotePNGs['BCT076'][3], emotePNGs['BCT076'][0], "END"],
+        "_periods": [subjects['BCT076'][1], subjects['BCT076'][3], "B", subjects['BCT076'][3], " Thermodynamics/ :control_knobs: Basic Electronics Engineering", "END"],
+        "_teachers": [teachers['BCT076'][1], teachers['BCT076'][3], "", teachers['BCT076'][9], teachers['BCT076'][13], "END"],
+        "_timing": [
           [
             [10, 15],
             [11, 5]
@@ -547,7 +724,7 @@ const info = {
         ]
       },
       {
-        "_emotes": [emotes['BCT076'][0], emotes['BCT076'][4],"END"],
+        "_emotes": [emotes['BCT076'][0], emotes['BCT076'][4], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][0], emotePNGs['BCT076'][4], "END"],
         "_periods": [subjects['BCT076'][0], subjects['BCT076'][4], "END"],
         "_teachers": [teachers['BCT076'][0], teachers['BCT076'][4], "END"],
@@ -569,9 +746,9 @@ const info = {
       {
         "_emotes": [emotes['BCT076'][1], emotes['BCT076'][1], emotes['BCT076'][1], "", emotes['BCT076'][3], emotes['BCT076'][3], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][1], emotePNGs['BCT076'][1], emotePNGs['BCT076'][1], "", emotePNGs['BCT076'][3], emotePNGs['BCT076'][3], "END"],
-        "_periods": [subjects['BCT076'][1], subjects['BCT076'][1], subjects['BCT076'][1], "B", subjects['BCT076'][3], subjects['BCT076'][3],"END"],
+        "_periods": [subjects['BCT076'][1], subjects['BCT076'][1], subjects['BCT076'][1], "B", subjects['BCT076'][3], subjects['BCT076'][3], "END"],
         "_teachers": [teachers['BCT076'][7], teachers['BCT076'][1], teachers['BCT076'][8], "", teachers['BCT076'][10], teachers['BCT076'][13], "END"],
-        "_timing":[
+        "_timing": [
           [
             [10, 15],
             [11, 5]
