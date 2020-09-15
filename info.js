@@ -116,7 +116,8 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
     "channelId": 750431836827680898, //The Collusion: #routine
-    "routine": [{
+    "routine": [
+      {
         "_emotes": [emotes['BCT075'][0], emotes['BCT075'][1], "", emotes['BCT075'][2], emotes['BCT075'][0], "END"],
         "_emotePNGs": [emotePNGs['BCT075'][0], emotePNGs['BCT075'][1], "", emotePNGs['BCT075'][2], emotePNGs['BCT075'][0], "END"],
         "_periods": [subjects['BCT075'][0], subjects['BCT075'][1], "B", subjects['BCT075'][2], subjects['BCT075'][0], "END"],
@@ -467,7 +468,7 @@ const info = {
   "681076561142611989" /*bot-test-server*/: {
     "notificationsON": false,
     "timeZoneFix": [5, 45],
-    "className": "075 BCT AB",
+    "className": "Bot Test Server",
     "classLogo": "https://i.imgur.com/OQwR8CB.png",
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,

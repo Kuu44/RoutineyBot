@@ -29,7 +29,7 @@ bot.login(token);
 // bot.login(process.env.BOT_TOKEN);
 bot.on('message', message => {
   //logs everything typed
-  console.log(message.content);
+  //console.log(message.content);
 
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 

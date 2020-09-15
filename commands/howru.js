@@ -2,7 +2,7 @@ module.exports = {
 	name: 'howru',
 	args: false,
 	dontShow: false,
-  description: 'Tells us how the bot is feeling today',
+  description: 'Tells us how the bot is feeling today (new one everyday)',
 	execute(message, args) {
 		const info = require('../info.js');
 		const {
