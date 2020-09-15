@@ -19,13 +19,12 @@ module.exports = {
 
       const day = getDay(info.timeZoneFix);
       const currTime = getCurrTime(info.timeZoneFix);
-      const currentFormattedTime = convertTime(currTime);
 
       if (day == 6) {
         msg = {
           period: 'It\'s a Saturday yarrr..',
           teacher: 'Ja beta, jiiley apni jindagi :smile:',
-          quote: '<Time>: ' + currentFormattedTime,
+          quote: '~',
           thumbnail: 'https://i.imgur.com/cuLTlNe.png'
         };
         sendCurrent(day, 0, msg, message.channel, message.guild.id);
@@ -61,7 +60,7 @@ module.exports = {
         msg = {
           period: 'No Classes Right Now',
           teacher: 'Ja beta, jiiley apni jindagi :smile:',
-          quote: '<Time>: ' + currentFormattedTime,
+          quote: '~',
           thumbnail: 'https://i.imgur.com/cuLTlNe.png'
         };
       } else {
@@ -70,7 +69,7 @@ module.exports = {
             msg = {
               period: 'BREAK :exploding_head:',
               teacher: 'Go Wild :zany_face:',
-              quote: '<Time> :' + currentFormattedTime,
+              quote: ':star_struck: Current Period :star_struck:',
               thumbnail: 'https://i.imgur.com/cuLTlNe.png'
             };
             break;
@@ -78,7 +77,7 @@ module.exports = {
             msg = {
               period: 'Free Period :zany_face:',
               teacher: 'Go resume your gaming :video_game:!',
-              quote: '<Time> :' + currentFormattedTime,
+              quote: ':yum: Current Period :yum:',
               thumbnail: 'https://i.imgur.com/cuLTlNe.png'
             };
             break;

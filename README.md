@@ -48,3 +48,6 @@ A Discord Bot for notifying of routines
 - standardized 'info.js' to contain different data by server(Notifications now work on all servers)
 - modified all code to adapt to new database changes
 - added commands to the 'howru' command
+- rt! next command added
+- rt! setchannel and rt! args  made dev-only commands
+- subscribed 3 new servers to the bot
