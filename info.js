@@ -629,7 +629,8 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
     "channelId": 745136785666998303, //076-BCT-AB: #reminders
-    "routine": [{
+    "routine": [
+      {
         "_emotes": [emotes['BCT076'][0], emotes['BCT076'][1], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][0], emotePNGs['BCT076'][1], "END"],
         "_periods": [subjects['BCT076'][0], subjects['BCT076'][1], "END"],
@@ -696,7 +697,7 @@ const info = {
       {
         "_emotes": ["", emotes['BCT076'][4],"",emotes['BCT076'][0], "END"],
         "_emotePNGs": ["", emotePNGs['BCT076'][4],"", emotePNGs['BCT076'][0], "END"],
-        "_periods": ["", subjects['BCT076'][4],"B", subjects['BCT076'][0], "END"],
+        "_periods": [" ", subjects['BCT076'][4],"B", subjects['BCT076'][0], "END"],
         "_teachers": ["", teachers['BCT076'][4],"", teachers['BCT076'][0], "END"],
         "_timing": [
           [
@@ -709,10 +710,10 @@ const info = {
           ],
           [
             [12, 45],
-            [2,0],
-          ]
+            [14,0],
+          ],
           [
-              [2, 0],
+            [14, 0],
             [16, 55]
           ]
         ]
