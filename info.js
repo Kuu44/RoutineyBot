@@ -41,7 +41,7 @@ BCT076:
 2. Workshop Technology; :hammer:; NA
 3. Chemistry;:lab_coat:; SP; RMS; AS; SJ
 4. Basic Electronics Engineering;:control_knobs:; JKM; SST
-5. Engineering Drawing;:triangular_ruler:; RC
+5. Engineering Drawing;:triangular_ruler:; NA
 6. Thermodynamics;:thermometer: ; LAB
 7. Basic ElectrAonics Engineering;:control_knobs:; LAB
 8. Chemistry;:lab_coat:;LAB
@@ -76,7 +76,7 @@ const emotes = {
 const teachers = {
   "BCT075": ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JRS", "LAB"],
   "kuus": ["SG", "MB", "SKM", "DSB", "BS", "SPP", "KBT", "BDM", "JG", "JRS", "LAB"],
-  "BCT076": ["AKJ", "GG", "NA", "SP", "JKM", "RC", "JG", "AKB", "PA", "RMS", "AS", "SJ", "SST", "LAB"]
+  "BCT076": ["AKJ", "GG", "NA", "SP", "JKM", "NA", "JG", "AKB", "PA", "RMS", "AS", "SJ", "SST", "LAB"]
 }; //List of teachers
 const emotePNGs = {
   "BCT075": [
@@ -285,7 +285,7 @@ const info = {
   },
   "544232674412462101" /*kuu's*/: {
     "notificationsON": false,
-    "timeZoneFix": [0, 0],
+    "timeZoneFix": [5, 45],
     "className": "075 BCT AB",
     "classLogo": "https://i.imgur.com/OQwR8CB.png",
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
@@ -633,7 +633,8 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
     "channelId": 745136785666998303, //076-BCT-AB: #reminders
-    "routine": [{
+    "routine": [
+      {
         "_emotes": [emotes['BCT076'][0], emotes['BCT076'][1], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][0], emotePNGs['BCT076'][1], "END"],
         "_periods": [subjects['BCT076'][0], subjects['BCT076'][1], "END"],
@@ -700,7 +701,7 @@ const info = {
       {
         "_emotes": ["", emotes['BCT076'][4],"",emotes['BCT076'][0], "END"],
         "_emotePNGs": ["", emotePNGs['BCT076'][4],"", emotePNGs['BCT076'][0], "END"],
-        "_periods": ["", subjects['BCT076'][4],"B", subjects['BCT076'][0], "END"],
+        "_periods": [" ", subjects['BCT076'][4],"B", subjects['BCT076'][0], "END"],
         "_teachers": ["", teachers['BCT076'][4],"", teachers['BCT076'][0], "END"],
         "_timing": [
           [
@@ -713,12 +714,12 @@ const info = {
           ],
           [
             [12, 45],
-            [14, 0],
+            [14,0],
           ],
           [
-              [14, 0],
+            [14, 0],
             [16, 55]
-          ],
+          ]
         ]
       },
       {
