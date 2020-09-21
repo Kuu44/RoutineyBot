@@ -146,10 +146,10 @@ const info = {
         ]
       },
       {
-        "_emotes": [emotes['BCT075'][3], emotes['BCT075'][0], "", emotes['BCT075'][2], emotes['BCT075'][4], "END"],
-        "_emotePNGs": [emotePNGs['BCT075'][3], emotePNGs['BCT075'][0], "", emotePNGs['BCT075'][2], emotePNGs['BCT075'][4], "END"],
-        "_periods": [subjects['BCT075'][3], subjects['BCT075'][0], "B", subjects['BCT075'][2], subjects['BCT075'][4], "END"],
-        "_teachers": [teachers['BCT075'][3], teachers['BCT075'][7], "", teachers['BCT075'][2], teachers['BCT075'][10], "END"],
+        "_emotes": [emotes['BCT075'][3], emotes['BCT075'][0], "", emotes['BCT075'][2], "", emotes['BCT075'][2], "END"],
+        "_emotePNGs": [emotePNGs['BCT075'][3], emotePNGs['BCT075'][0], "", emotePNGs['BCT075'][2], "",emotePNGs['BCT075'][2], "END"],
+        "_periods": [subjects['BCT075'][3], subjects['BCT075'][0], "B", subjects['BCT075'][2], "", subjects['BCT075'][2], "END"],
+        "_teachers": [teachers['BCT075'][3], teachers['BCT075'][7], "", teachers['BCT075'][2], "", teachers['BCT075'][9], "END"],
         "_timing": [
           [
             [10, 15],
@@ -169,7 +169,11 @@ const info = {
           ],
           [
             [14, 25],
-            [16, 55]
+            [16, 0]
+          ],
+          [
+            [16,0],
+            [17,30]
           ]
         ]
       },
