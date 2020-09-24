@@ -1,4 +1,4 @@
-[![Run on Repl.it](https://repl.it/badge/github/Kuu44/RoutineyBotOfficial)](https://repl.it/github/Kuu44/RoutineyBotOfficial)
+[![Run on Repl.it](https://repl.it/badge/github/Kuu44/RoutineyBot)](https://repl.it/github/Kuu44/RoutineyBot)
 # RoutineyBot 
 A Discord Bot for notifying of routines
 
