@@ -1,6 +1,6 @@
 function sendCurrent(day, position, msg, channel, serverId) {
   const Discord = require('discord.js');
-  var info = require('../info.js');
+  var {info} = require('../info.js');
   info = info[serverId];
   const {
     inMinutes,

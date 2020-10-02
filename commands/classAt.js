@@ -6,7 +6,7 @@ module.exports = {
   description: 'shows class at the given time',
   execute(message, args) {
     const Discord = require('discord.js');
-    var info = require('../info.js');
+    var {info} = require('../info.js');
     info = info[message.guild.id];
 
     const sendCurrent = require('../functions/sendCurrent.js');

@@ -4,7 +4,7 @@ module.exports = {
   dontShow: false,
   description: "Turns on the routine notifications",
   execute(message, args) {
-    var info = require('../info.js');
+    var {info} = require('../info.js');
     info = info[message.guild.id];
 
     const channelId = info.channelId;

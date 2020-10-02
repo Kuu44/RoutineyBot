@@ -118,8 +118,7 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
     "channelId": 750431836827680898, //The Collusion: #routine
-    "routine": [
-      {
+    "routine": [{
         "_emotes": [emotes['BCT075'][0], emotes['BCT075'][1], "", emotes['BCT075'][2], emotes['BCT075'][0], "END"],
         "_emotePNGs": [emotePNGs['BCT075'][0], emotePNGs['BCT075'][1], "", emotePNGs['BCT075'][2], emotePNGs['BCT075'][0], "END"],
         "_periods": [subjects['BCT075'][0], subjects['BCT075'][1], "B", subjects['BCT075'][2], subjects['BCT075'][0], "END"],
@@ -149,7 +148,7 @@ const info = {
       },
       {
         "_emotes": [emotes['BCT075'][3], emotes['BCT075'][0], "", emotes['BCT075'][2], "", emotes['BCT075'][2], "END"],
-        "_emotePNGs": [emotePNGs['BCT075'][3], emotePNGs['BCT075'][0], "", emotePNGs['BCT075'][2], "",emotePNGs['BCT075'][2], "END"],
+        "_emotePNGs": [emotePNGs['BCT075'][3], emotePNGs['BCT075'][0], "", emotePNGs['BCT075'][2], "", emotePNGs['BCT075'][2], "END"],
         "_periods": [subjects['BCT075'][3], subjects['BCT075'][0], "B", subjects['BCT075'][2], "", subjects['BCT075'][2], "END"],
         "_teachers": [teachers['BCT075'][3], teachers['BCT075'][7], "", teachers['BCT075'][2], "", teachers['BCT075'][9], "END"],
         "_timing": [
@@ -174,8 +173,8 @@ const info = {
             [16, 0]
           ],
           [
-            [16,0],
-            [17,30]
+            [16, 0],
+            [17, 30]
           ]
         ]
       },
@@ -295,8 +294,7 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
     "channelId": 753515966759174264, //kuu's Crib: #routiney-notifications
-    "routine": [
-      {
+    "routine": [{
         "_emotes": [emotes['kuus'][0], emotes['kuus'][1], "", emotes['kuus'][2], emotes['kuus'][0], "END"],
         "_emotePNGs": [emotePNGs['kuus'][0], emotePNGs['kuus'][1], "", emotePNGs['kuus'][2], emotePNGs['kuus'][0], "END"],
         "_periods": [subjects['kuus'][0], subjects['kuus'][1], "B", subjects['kuus'][2], subjects['kuus'][0], "END"],
@@ -468,8 +466,7 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 15,
     "channelId": 750653645174997093, //bot-test-server: #routiney-bot-test
-    "routine": [
-      {
+    "routine": [{
         "_emotes": [emotes['kuus'][0], emotes['kuus'][1], "", emotes['kuus'][2], emotes['kuus'][0], "END"],
         "_emotePNGs": [emotePNGs['kuus'][0], emotePNGs['kuus'][1], "", emotePNGs['kuus'][2], emotePNGs['kuus'][0], "END"],
         "_periods": [subjects['kuus'][0], subjects['kuus'][1], "B", subjects['kuus'][2], subjects['kuus'][0], "END"],
@@ -641,8 +638,7 @@ const info = {
     "classLink": "https://teams.microsoft.com/_#/school//?ctx=teamsGrid",
     "preTime": 10,
     "channelId": 745136785666998303, //076-BCT-AB: #reminders
-    "routine": [
-      {
+    "routine": [{
         "_emotes": [emotes['BCT076'][0], emotes['BCT076'][1], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][0], emotePNGs['BCT076'][1], "END"],
         "_periods": [subjects['BCT076'][0], subjects['BCT076'][1], "END"],
@@ -707,10 +703,10 @@ const info = {
         ]
       },
       {
-        "_emotes": ["", emotes['BCT076'][4],"",emotes['BCT076'][0], "END"],
-        "_emotePNGs": ["", emotePNGs['BCT076'][4],"", emotePNGs['BCT076'][0], "END"],
-        "_periods": [" ", subjects['BCT076'][4],"B", subjects['BCT076'][0], "END"],
-        "_teachers": ["", teachers['BCT076'][4],"", teachers['BCT076'][0], "END"],
+        "_emotes": ["", emotes['BCT076'][4], "", emotes['BCT076'][0], "END"],
+        "_emotePNGs": ["", emotePNGs['BCT076'][4], "", emotePNGs['BCT076'][0], "END"],
+        "_periods": [" ", subjects['BCT076'][4], "B", subjects['BCT076'][0], "END"],
+        "_teachers": ["", teachers['BCT076'][4], "", teachers['BCT076'][0], "END"],
         "_timing": [
           [
             [10, 15],
@@ -722,7 +718,7 @@ const info = {
           ],
           [
             [12, 45],
-            [14,0],
+            [14, 0],
           ],
           [
             [14, 0],
@@ -763,10 +759,10 @@ const info = {
         ]
       },
       {
-        "_emotes": [emotes['BCT076'][2], "", emotes['BCT076'][4], emotes['BCT076'][3],"", emotes['BCT076'][4], "END"],
-        "_emotePNGs": [emotePNGs['BCT076'][2], "", emotePNGs['BCT076'][4], emotePNGs['BCT076'][3],"", emotePNGs['BCT076'][4], "END"],
-        "_periods": [subjects['BCT076'][2], " ",subjects['BCT076'][4], subjects['BCT076'][3], "B", subjects['BCT076'][4], "END"],
-        "_teachers": [teachers['BCT076'][2], "", teachers['BCT076'][3], teachers['BCT076'][11],"", teachers['BCT076'][12], "END"],
+        "_emotes": [emotes['BCT076'][2], "", emotes['BCT076'][4], emotes['BCT076'][3], "", emotes['BCT076'][4], "END"],
+        "_emotePNGs": [emotePNGs['BCT076'][2], "", emotePNGs['BCT076'][4], emotePNGs['BCT076'][3], "", emotePNGs['BCT076'][4], "END"],
+        "_periods": [subjects['BCT076'][2], " ", subjects['BCT076'][4], subjects['BCT076'][3], "B", subjects['BCT076'][4], "END"],
+        "_teachers": [teachers['BCT076'][2], "", teachers['BCT076'][3], teachers['BCT076'][11], "", teachers['BCT076'][12], "END"],
         "_timing": [
           [
             [10, 15],
@@ -789,13 +785,15 @@ const info = {
             [14, 55]
           ],
           [
-            [14,55],
-            [16,55],
+            [14, 55],
+            [16, 55],
           ],
         ]
       }
     ]
   },
+};
+const helpers = {
   "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
   "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
   "Timing": [
@@ -833,4 +831,7 @@ const info = {
     ]
   ]
 };
-module.exports = info;
+module.exports = {
+  info,
+  helpers
+};

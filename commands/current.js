@@ -5,7 +5,7 @@ module.exports = {
   description: 'What\'s the current torture on the menu?',
   execute(message, args) {
     const Discord = require('discord.js');
-    var info = require('../info.js');
+    var {info} = require('../info.js');
     info = info[message.guild.id];
 
     const sendCurrent = require('../functions/sendCurrent.js');
