@@ -77,7 +77,7 @@ const subjects = {
 }; //List of subjects
 const emotes = {
   "BCT074": [
-     ":penguin:", ":cd:", ":robot:",":technologist:", 
+     ":penguin:", ":cd:", ":technologist:", ":robot:", 
      ":control_knobs:", 
      ":money_with_wings:",
      ":card_box:",
@@ -136,7 +136,7 @@ const emotePNGs = {
 
 const info = {
 
-  // "550704758055370767" /*BCT074*/: {
+   "    " /*BCT074*/: {
   //   "notificationsON": false,
   //   "startNotification": true,
   //   "preNotification": true,
@@ -173,7 +173,7 @@ const info = {
 {
   "_emotes": [emotes['BCT074'][2], "", emotes['BCT074'][6], emotes['BCT074'][0], "END"],
   "_emotePNGs": [emotePNGs['BCT074'][2], "", emotePNGs['BCT074'][6], emotePNGs['BCT074'][0], "END"],
-  "_periods": [subjects['BCT074'][2], "B", subjects['BCT074'][6], subjects['BCT074'][6],"END"],
+  "_periods": [subjects['BCT074'][2], "B", subjects['BCT074'][6], "Operating System/ :control_knobs: Embedded System","END"],
   "_teachers": [teachers['BCT074'][6], "", teachers['BCT074'][6], teachers['BCT074'][6], "END"],
   "_timing": [
     [
@@ -313,8 +313,9 @@ const info = {
       [16, 55]
     ]
   ]
+}
+]
 },
-
 
 
 
