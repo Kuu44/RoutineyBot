@@ -4,11 +4,15 @@ const Discord = require('discord.js');
 const keepAlive=require('./server');
 
 const {prefix} = require('./auth.json');
-const {token} = require('./secrets.json');
+//const {token} = require('./secrets.json');
 
 // Initialize Discord Bot
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
+
+var {info:infos} = require('./info.js');
+var schedule = require("node-schedule");
+const scheduleNotification=require("./functions/scheduleNotifications.js")
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
@@ -25,11 +29,30 @@ bot.commands.set(helpCommand.name, helpCommand);
 //Bot commands
 bot.once('ready', () => { //Only triggers once after logging in
   console.log('Ready!');
+    
+    for(const serverId in infos)
+    {
+      let info=infos[serverId]
+      //console.log(info[property].channelId)
+      bot.channels.cache.map((channel)=>{
+      if(channel.id==info.channelId) {
+      console.log(channel.name);
+      //channel.send(" Sorry I was asleep :sweat_smile: I'm awake now !");
+        try{
+          scheduleNotification(channel,info,schedule,serverId);
+        }catch(e)
+        {
+          channel.send(" Error scheduling!")
+        }
+      
+      }
+    });
+    }
 });
 
 keepAlive();
-bot.login(token);
-//bot.login(process.env.BOT_TOKEN);
+//bot.login(token);
+bot.login(process.env.BOT_TOKEN);
 bot.on('message', message => {
   //logs everything typed
   //console.log(message.content);
