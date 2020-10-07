@@ -325,7 +325,7 @@ const info = {
       "https://teams.microsoft.com/_#/school//?ctx=teamsGrid"
     ],
     "preTime": 15,
-    "channelId": 750431836827680898, //The Collusion: #routine
+    "channelId": '750431836827680898', //The Collusion: #routine
     "routine": [{
         "_emotes": [emotes['BCT075'][0], emotes['BCT075'][1], "", emotes['BCT075'][2], emotes['BCT075'][0], "END"],
         "_emotePNGs": [emotePNGs['BCT075'][0], emotePNGs['BCT075'][1], "", emotePNGs['BCT075'][2], emotePNGs['BCT075'][0], "END"],
@@ -513,7 +513,7 @@ const info = {
       "https://teams.microsoft.com/_#/school//?ctx=teamsGrid"
     ],
     "preTime": 15,
-    "channelId": 753515966759174264, //kuu's Crib: #routiney-notifications
+    "channelId": '753515966759174264', //kuu's Crib: #routiney-notifications
     "routine": [{
         "_emotes": [emotes['BCT075'][0], emotes['BCT075'][1], " ", emotes['BCT075'][2], emotes['BCT075'][0], "END"],
         "_emotePNGs": [emotePNGs['BCT075'][0], emotePNGs['BCT075'][1], " ", emotePNGs['BCT075'][2], emotePNGs['BCT075'][0], "END"],
@@ -697,7 +697,7 @@ const info = {
       "https://teams.microsoft.com/_#/school//?ctx=teamsGrid"
     ],
     "preTime": 15,
-    "channelId": 750653645174997093, //bot-test-server: #routiney-bot-test
+    "channelId": '750653645174997093', //bot-test-server: #routiney-bot-test
     "routine": [{
         "_emotes": [emotes['BCT075'][0], emotes['BCT075'][1], " ", emotes['BCT075'][2], emotes['BCT075'][0], "END"],
         "_emotePNGs": [emotePNGs['BCT075'][0], emotePNGs['BCT075'][1], " ", emotePNGs['BCT075'][2], emotePNGs['BCT075'][0], "END"],
@@ -884,7 +884,7 @@ const info = {
       "https://teams.microsoft.com/_#/school//?ctx=teamsGrid"
     ],
     "preTime": 10,
-    "channelId": 745136785666998303, //076-BCT-AB: #reminders
+    "channelId": '745136785666998303', //076-BCT-AB: #reminders
     "routine": [{
         "_emotes": [emotes['BCT076'][0], emotes['BCT076'][1], "END"],
         "_emotePNGs": [emotePNGs['BCT076'][0], emotePNGs['BCT076'][1], "END"],
