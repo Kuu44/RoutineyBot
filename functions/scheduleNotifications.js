@@ -57,7 +57,7 @@ function scheduleNotifications(notificationChannel,info,schedule,serverId, bot)
         console.log(
           `Notifications turned on in <#${notificationChannel.name}> channel`
         );
-        notificationChannel.send(" Notifications scheduled :smile: ")
+        logChannel.send(`:pinching_hand: Notifications turned on in in **${notificationChannel.guild.name}** Server's **${notificationChannel.name}** channel :slight_smile:`)
         return true;
       } else {
         return false;

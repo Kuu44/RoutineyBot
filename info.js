@@ -10,6 +10,8 @@ BCT076 679306265674907671: #reminders 745136785666998303
 bot-test-server 681076561142611989: #routiney-bot-test 750653645174997093
 BCT074 705801042624905267: #routiney... 762874544393289728
 
+Bot Log Channel: 763767420908732448
+
 Message-link-Extraction-guide: https://discordapp.com/channels/<serverId>/<channelId>/<messageId>
 
 Guide:
@@ -121,7 +123,7 @@ const emotePNGs = {
 
 const info = {
   "705801042624905267" /*BCT074*/: {
-    "notificationsON": true,
+    "notificationsON": false,
     "startNotification": false,
     "preNotification": true,
     "timeZoneFix": [5, 45],
@@ -137,7 +139,7 @@ const info = {
       "https://teams.microsoft.com/_#/school//?ctx=teamsGrid"
     ],
     "preTime": 10,
-    "channelId": 762874544393289728, //BCT074: #routine
+    "channelId": '762874544393289728', //BCT074: #routine
     "routine": [{
         "_emotes": [emotes['BCT074'][0], emotes['BCT074'][1], "", emotes['BCT074'][6], "END"],
         "_emotePNGs": [emotePNGs['BCT074'][0], emotePNGs['BCT074'][1], "", emotePNGs['BCT074'][6], "END"],
