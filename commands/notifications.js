@@ -24,7 +24,7 @@ module.exports = {
       (u) => u.id == channelId
     );
     //Setting Notifications
-    if (info.notificationsON) {
+    if (!info.notificationsON) {
       if (notificationChannel != undefined) {
         for (var day = 0; day < 6; day++) {
           //Prints routine in the morning
