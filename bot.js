@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const keepAlive=require('./server');
 
 const {prefix} = require('./auth.json');
-const {token} = require('./secrets.json');
+//const {token} = require('./secrets.json');
 
 // Initialize Discord Bot
 const bot = new Discord.Client();
