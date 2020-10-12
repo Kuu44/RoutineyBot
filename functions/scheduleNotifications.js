@@ -21,8 +21,8 @@ function scheduleNotifications(notificationChannel,info,schedule,serverId, bot)
    if (notificationChannel != undefined) {
         for (var day = 0; day < 6; day++) {
           //Prints routine in the morning
-          const todayComm = require(`./giveToday.js`);
-          const timeToSet = timeZoneFix([9, 59], info.timeZoneFix);
+          const giveToday = require(`./giveToday.js`);
+          const timeToSet = timeZoneFix([9, 00], info.timeZoneFix);
           schedule.scheduleJob(`${timeToSet[1]} ${timeToSet[0]} * * ${day}`, function() {
             giveToday(notificationChannel, serverId);
           });
@@ -51,6 +51,7 @@ function scheduleNotifications(notificationChannel,info,schedule,serverId, bot)
           }
           sendCurrent(6,0, msg, notificationChannel, serverId);
         });
+        console.log('Day 6' + '\'s Schedule Set');
 
         //notificationChannel.send(" Notifications turned on ");
         info.notificationsON = true;
