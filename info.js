@@ -717,7 +717,7 @@ const info = {
     ]
   },
   "681076561142611989" /*bot-test-server*/: {
-    "notificationsON": true,
+    "notificationsON": false,
     "startNotification": true,
     "preNotification": false,
     "timeZoneFix": [5, 45],
