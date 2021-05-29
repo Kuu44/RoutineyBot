@@ -29,7 +29,7 @@ bot.commands.set(helpCommand.name, helpCommand);
 //Bot commands
 bot.once('ready', () => { //Only triggers once after logging in
   console.log('Ready!');
-    
+    /*
     for(const serverId in infos)
     {
       let info=infos[serverId]
@@ -47,13 +47,13 @@ bot.once('ready', () => { //Only triggers once after logging in
       
       }
     });
-    }
+    }*/
 });
 
 keepAlive();
 //bot.login(token);
 bot.login(process.env.BOT_TOKEN);
-bot.on('message', message => {
+bot.on('message', (message) => {
   //logs everything typed
   //console.log(message.content);
 
