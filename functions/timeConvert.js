@@ -15,7 +15,6 @@ function convertTime(clock) {
 
 //Time 'preTime' minutes early
 const getTime = (time, preTime) => {
-  const {info} = require('../info.js');
   var total = time[0] * 60 + time[1];
   total -= preTime;
   return [Math.floor(total / 60), total % 60];

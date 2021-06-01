@@ -3,14 +3,16 @@ module.exports = {
   args: false,
   dontShow: false,
   description: 'The bread and butter of Routiney but for the future!',
-  execute(message, args) {
-    const msgCreate = require('../functions/post.js');
-    const postEmbed = require('../functions/postEmbed.js');
+  execute: async (message, args) => {
+    const { msgCreate } = require('../functions/post.js');
+    const { postEmbed } = require('../functions/postEmbed.js');
     const {
       getCurrTime,
       getDay
     } = require('../functions/timeConvert.js');
-    const {info} = require('../info.js');
+    const axios = require('axios');
+    const { getRoutine } = require("../functions/routine.js");
+    var info = await getRoutine(message.guild.id);
 
     var day = getDay(info[message.guild.id].timeZoneFix) + 1;
     day = (day > 6) ? 0 : day;
@@ -21,7 +23,7 @@ module.exports = {
       message.channel.send(`Its a Saturday :tada:. Ja, jiiley apni jindagi, <@!${message.author.id}>! :partying_face:`);
       return;
     }
-    const msg = msgCreate(day, message.guild.id);
-    postEmbed(day, message.channel, msg, 'Tomorrow\'s Classes:', message.guild.id);
+    const msg = await msgCreate(day, message.guild.id);
+    await postEmbed(day, message.channel, msg, 'Tomorrow\'s Classes:', message.guild.id);
   },
 };

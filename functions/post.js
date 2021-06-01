@@ -1,5 +1,7 @@
-function msgCreate(day, serverId) {
-  var {info} = require('../info.js');
+async function msgCreate(day, serverId) {
+  const axios = require('axios');
+  const { getRoutine } = require("./routine.js");
+  var info = await getRoutine(serverId);
   info = info[serverId];
 
   const {
@@ -56,4 +58,4 @@ function msgCreate(day, serverId) {
   return msg;
 }
 
-module.exports = msgCreate;
+module.exports.msgCreate = msgCreate;

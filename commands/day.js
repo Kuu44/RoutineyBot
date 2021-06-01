@@ -4,9 +4,9 @@ module.exports = {
   usage: 'rt!day <day of the week>',
   dontShow: false,
   description: 'Shows routine of a day!',
-  execute(message, args) {
-    const msgCreate = require('../functions/post.js');
-    const postEmbed = require('../functions/postEmbed.js');
+  execute: async (message, args) => {
+    const { msgCreate } = require('../functions/post.js');
+    const { postEmbed } = require('../functions/postEmbed.js');
     var day;
     var dayT = args[0].toLowerCase();
 
@@ -39,6 +39,6 @@ module.exports = {
     }
 
     const msg = msgCreate(day, message.guild.id);
-    postEmbed(day, message.channel, msg, 'Classes For The Day:', message.guild.id);
+    await postEmbed(day, message.channel, msg, 'Classes For The Day:', message.guild.id);
   },
 };

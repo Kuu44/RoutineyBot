@@ -3,12 +3,14 @@ module.exports = {
   args: false,
   dontShow: false,
   description: 'What\'s the current torture on the menu?',
-  execute(message, args) {
+  execute: async (message, args) => {
     const Discord = require('discord.js');
-    var {info} = require('../info.js');
+    const axios = require('axios');
+    const { getRoutine } = require("../functions/routine.js");
+    var info = await getRoutine(message.guild.id);
     info = info[message.guild.id];
 
-    const sendCurrent = require('../functions/sendCurrent.js');
+    const { sendCurrent } = require('../functions/sendCurrent.js');
     const {
       inMinutes,
       getCurrTime,
@@ -25,7 +27,7 @@ module.exports = {
         quote: '~',
         thumbnail: 'https://i.imgur.com/cuLTlNe.png'
       };
-      sendCurrent(day, 0, msg, message.channel, message.guild.id);
+      await sendCurrent(day, 0, msg, message.channel, message.guild.id);
       return;
     }
 
@@ -88,6 +90,6 @@ module.exports = {
           };
       }
     }
-    sendCurrent(day, position, msg, message.channel, message.guild.id);
+    await sendCurrent(day, position, msg, message.channel, message.guild.id);
   }
 };

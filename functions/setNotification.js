@@ -4,9 +4,10 @@
 // notificationMessage = the string that you want to display
 // time = time array of format [hours,minutes]
 
-const setNotifications = (day, schedule, channel, notificationMessage, time, position, serverId) => {
-  const sendCurrent = require('./sendCurrent.js');
-  var {info} = require('../info.js');
+async function setNotification(day, schedule, channel, notificationMessage, time, position, serverId){
+  const sendCurrent = require('./sendCurrent.js');const axios = require('axios');
+  const { getRoutine } = require("./routine.js");
+  var info = await getRoutine(serverId);
   info = info[serverId];
   const {
     timeZoneFix
@@ -51,7 +52,7 @@ const setNotifications = (day, schedule, channel, notificationMessage, time, pos
   // const timeZone = time;
   console.log(timeZone);
   var j = schedule.scheduleJob(`${timeZone[1]} ${timeZone[0]} * * ${day}`, function() {
-    sendCurrent(day, position, msg, channel, serverId);
+    await sendCurrent(day, position, msg, channel, serverId);
   });
 };
-module.exports = setNotifications;
+module.exports.setNotification = setNotification;

@@ -1,6 +1,8 @@
-function keyEmbed(key, message){
+async function keyEmbed(key, message){
   const Discord = require('discord.js');
-  var {info} = require('../info.js');
+  const axios = require('axios');
+  const { getRoutine } = require("./routine.js");
+  var info = await getRoutine(message.guild.id);
   inf = info[message.guild.id];
 
   const exampleEmbed = new Discord.MessageEmbed()
@@ -19,4 +21,4 @@ function keyEmbed(key, message){
     return exampleEmbed;
 }
 
-module.exports = keyEmbed;
+module.exports.keyEmbed = keyEmbed;

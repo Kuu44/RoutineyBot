@@ -3,12 +3,12 @@ module.exports = {
   args: false,
   dontShow: false,
   description: 'Gives today\'s date and time',
-  execute(message, args) {
+  execute: async (message, args) => {
     const Discord = require('discord.js');
-    var {
-      info,
-      helpers
-    } = require('../info.js');
+    const axios = require('axios');
+    const { getRoutine } = require("../functions/routine.js");
+    var info = await getRoutine(message.guild.id);
+    const { helpers } = require("../functions/helpers.js");
     const {
       getCurrTime,
       getDay

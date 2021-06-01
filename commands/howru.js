@@ -3,8 +3,11 @@ module.exports = {
 	args: false,
 	dontShow: false,
   description: 'Tells us how the bot is feeling today (new one everyday)',
-	execute(message, args) {
-		const {info, helpers} = require('../info.js');
+	execute: async (message, args) => {
+		const axios = require('axios');
+    const { getRoutine } = require("../functions/routine.js");
+    const info = await getRoutine(message.guild.id);
+		const { helpers } = require("../functions/helpers.js");
 		const {
 			inMinutes,
 			convertTime,

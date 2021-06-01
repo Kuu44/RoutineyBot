@@ -1,6 +1,8 @@
-function sendCurrent(day, position, msg, channel, serverId) {
+async function sendCurrent(day, position, msg, channel, serverId) {
   const Discord = require('discord.js');
-  var {info} = require('../info.js');
+  const axios = require('axios');
+  const { getRoutine } = require("./routine.js");
+  var info = await getRoutine(serverId);
   info = info[serverId];
   const {
     inMinutes,
@@ -38,4 +40,4 @@ function sendCurrent(day, position, msg, channel, serverId) {
     .setFooter('Have a boring day studying! :P', 'https://i.imgur.com/QrtHFpz.png');
   channel.send(exampleEmbed);
 }
-module.exports = sendCurrent;
+module.exports.sendCurrent = sendCurrent;

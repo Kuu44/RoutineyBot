@@ -4,12 +4,14 @@ module.exports = {
   dontShow: false,
   usage: 'rt! classat <dayOfWeek> <Hour(in 24)> <Minute>',
   description: 'shows class at the given time',
-  execute(message, args) {
+  execute: async (message, args) => {
     const Discord = require('discord.js');
-    var {info} = require('../info.js');
+    const axios = require('axios');
+    const { getRoutine } = require("../functions/routine.js");
+    var info = await getRoutine(message.guild.id);
     info = info[message.guild.id];
 
-    const sendCurrent = require('../functions/sendCurrent.js');
+    const {sendCurrent} = require('../functions/sendCurrent.js');
     const {
       inMinutes,
       convertTime,
@@ -120,6 +122,6 @@ module.exports = {
           };
       }
     }
-    sendCurrent(day, position, msg, message.channel, message.guild.id);
+    await sendCurrent(day, position, msg, message.channel, message.guild.id);
   }
 };

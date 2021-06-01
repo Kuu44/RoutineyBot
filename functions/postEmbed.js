@@ -1,9 +1,9 @@
-function postEmbed(day, channel, msg, description, serverId) {
+async function postEmbed(day, channel, msg, description, serverId) {
   const Discord = require('discord.js');
-  const {
-    info,
-    helpers
-  } = require('../info.js');
+  const axios = require('axios');
+  const { getRoutine } = require("./routine.js");
+  var info = await getRoutine(serverId);
+  const { helpers } = require("..functions/helpers.js");
   const inf = info[serverId];
 
   const exampleEmbed = new Discord.MessageEmbed()
@@ -19,4 +19,4 @@ function postEmbed(day, channel, msg, description, serverId) {
   channel.send(exampleEmbed);
 }
 
-module.exports = postEmbed;
+module.exports.postEmbed = postEmbed;
